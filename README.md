@@ -1,10 +1,10 @@
 
 # Modified IoT Projects from ESP32-C3 Book
 Using ESP-IDF v5.5.1
-
+Original project: https://github.com/espressif/book-esp32c3-iot-projects.git
 ### About this book
 
-《ESP32-C3物联网工程项目指导》, _IoT Guidance based on ESP32-C3_ in English, is a book written by Espressif engineers, that provides detailed guidance on IoT development, including hardware design based on ESP32-C3, ESP-IDF, Wi-Fi configuration, ESP RainMaker, etc...
+ESP32-C3, _IoT Guidance based on ESP32-C3_ in English, is a book written by Espressif engineers, that provides detailed guidance on IoT development, including hardware design based on ESP32-C3, ESP-IDF, Wi-Fi configuration, ESP RainMaker, etc...
 
 This repo contains the code example of builing a smart light from the book.
 
