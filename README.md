@@ -1,7 +1,5 @@
 
-# Modified IoT Projects from ESP32-C3 Book
-Using ESP-IDF v5.5.1
-
+# Modified IoT Projects from ESP32-C3 Book (Using ESP-IDF v5.5.1)
 Original project: https://github.com/espressif/book-esp32c3-iot-projects.git
 ### About this book
 
