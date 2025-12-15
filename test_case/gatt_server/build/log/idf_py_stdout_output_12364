@@ -1,0 +1,106 @@
+Command: e:\esp\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe e:\esp\ESP-IDFcontainer\v5.5.1\esp-idf\tools/idf_monitor.py -p COM3 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c3 --revision 3 --decode-panic backtrace E:\esp\book-esp32c3-iot-projects\test_case\gatt_server\build\gatt_server_demos.elf E:\esp\book-esp32c3-iot-projects\test_case\gatt_server\build\bootloader\bootloader.elf --force-color -m 'e:\esp\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'e:\esp\ESP-IDFcontainer\v5.5.1\esp-idf\tools\idf.py'
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xd (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x15ac
+load:0x403cbf10,len:0xc34
+load:0x403ce710,len:0x2fd0
+entry 0x403cbf1a
+[0;32mI (30) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Sep 24 2025 08:41:37[0m
+[0;32mI (30) boot: chip revision: v0.4[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (34) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (38) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 sec_cert         unknown          3f 06 0000d000 00003000[0m
+[0;32mI (65) boot:  1 nvs              WiFi data        01 02 00010000 00006000[0m
+[0;32mI (72) boot:  2 otadata          OTA data         01 00 00016000 00002000[0m
+[0;32mI (78) boot:  3 phy_init         RF data          01 01 00018000 00001000[0m
+[0;32mI (85) boot:  4 ota_0            OTA app          00 10 00020000 00190000[0m
+[0;32mI (91) boot:  5 ota_1            OTA app          00 11 001b0000 00190000[0m
+[0;32mI (98) boot:  6 fctry            WiFi data        01 02 00340000 00006000[0m
+[0;32mI (104) boot: End of partition table[0m
+[0;32mI (108) esp_image: segment 0: paddr=00020020 vaddr=3c0a0020 size=228ach (141484) map[0m
+[0;32mI (138) esp_image: segment 1: paddr=000428d4 vaddr=3fc94600 size=0229ch (  8860) load[0m
+[0;32mI (140) esp_image: segment 2: paddr=00044b78 vaddr=40380000 size=0b4a0h ( 46240) load[0m
+[0;32mI (150) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=9a368h (631656) map[0m
+[0;32mI (251) esp_image: segment 4: paddr=000ea390 vaddr=4038b4a0 size=08f78h ( 36728) load[0m
+[0;32mI (258) esp_image: segment 5: paddr=000f3310 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (264) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (265) boot: Disabling RNG early entropy source...[0m
+[0;32mI (276) cpu_start: Unicore app[0m
+[0;32mI (284) cpu_start: Pro cpu start user code[0m
+[0;32mI (285) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (285) app_init: Application information:[0m
+[0;32mI (285) app_init: Project name:     gatt_server_demos[0m
+[0;32mI (289) app_init: App version:      04d7331-dirty[0m
+[0;32mI (294) app_init: Compile time:     Sep 24 2025 08:39:32[0m
+[0;32mI (299) app_init: ELF file SHA256:  fdf5b43bb...[0m
+[0;32mI (303) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (307) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (311) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (315) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (319) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (325) heap_init: At 3FC9AE60 len 000251A0 (148 KiB): RAM[0m
+[0;32mI (330) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (336) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (342) heap_init: At 50000020 len 00001FC8 (7 KiB): RTCRAM[0m
+[0;32mI (348) spi_flash: detected chip: generic[0m
+[0;32mI (351) spi_flash: flash io: dio[0m
+[0;32mI (354) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (360) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (367) coexist: coex firmware version: b0bcc39[0m
+[0;32mI (398) coexist: coexist rom version 9387209[0m
+[0;32mI (398) main_task: Started on CPU0[0m
+[0;32mI (398) main_task: Calling app_main()[0m
+[1;31mE (398) GATTS_DEMO: app_main[0m
+[0;32mI (398) GATTS_DEMO: NVS Flash initialization[0m
+[0;32mI (408) GATTS_DEMO: Application driver initialization[0m
+[0;32mI (428) BLE_INIT: BT controller compile version [2edb0b0][0m
+[0;32mI (428) BLE_INIT: Using main XTAL as clock source[0m
+[0;32mI (428) BLE_INIT: Feature Config, ADV:1, BLE_50:1, DTM:1, SCAN:1, CCA:0, SMP:1, CONNECT:1[0m
+[0;32mI (438) BLE_INIT: Bluetooth MAC: e8:06:90:66:41:fe[0m
+[0;32mI (438) phy_init: phy_version 1201,bae5dd99,Mar  3 2025,15:36:21[0m
+[0;32mI (488) GATTS_DEMO: REGISTER_APP_EVT, status 0, app_id 0[0m
+
+[0;33mW (488) BT_BTM: BTM_BleWriteAdvData, Partial data write into ADV[0m
+[0;32mI (488) GATTS_DEMO: CREATE_SERVICE_EVT, status 0,  service_handle 40[0m
+
+[0;32mI (498) GATTS_DEMO: SERVICE_START_EVT, status 0, service_handle 40[0m
+
+[0;32mI (498) GATTS_DEMO: ADD_CHAR_EVT, status 0,  attr_handle 42, service_handle 40[0m
+
+[0;32mI (508) GATTS_DEMO: ADD_DESCR_EVT, status 0, attr_handle 43, service_handle 40[0m
+
+[0;32mI (518) GATTS_DEMO: REGISTER_APP_EVT, status 0, app_id 1[0m
+
+[0;32mI (518) GATTS_DEMO: CREATE_SERVICE_EVT, status 0,  service_handle 44[0m
+
+[0;32mI (528) GATTS_DEMO: SERVICE_START_EVT, status 0, service_handle 44[0m
+
+[0;32mI (538) GATTS_DEMO: ADD_CHAR_EVT, status 0,  attr_handle 46, service_handle 44[0m
+
+[0;32mI (538) GATTS_DEMO: ADD_DESCR_EVT, status 0, attr_handle 47, service_handle 44[0m
+
+[0;32mI (548) main_task: Returned from app_main()[0m
+[0;32mI (3018) GATTS_DEMO: ESP_GATTS_CONNECT_EVT, conn_id 0, remote 5e:55:ad:61:ab:77:[0m
+[0;32mI (3028) GATTS_DEMO: CONNECT_EVT, conn_id 0, remote 5e:55:ad:61:ab:77:[0m
+[0;32mI (3618) GATTS_DEMO: update connection params status = 0, min_int = 16, max_int = 32,conn_int = 18,latency = 0, timeout = 400[0m
+[0;32mI (3868) GATTS_DEMO: update connection params status = 0, min_int = 0, max_int = 0,conn_int = 6,latency = 0, timeout = 500[0m
+[0;32mI (4098) GATTS_DEMO: update connection params status = 0, min_int = 0, max_int = 0,conn_int = 18,latency = 0, timeout = 400[0m
+[0;32mI (11988) GATTS_DEMO: GATT_WRITE_EVT, conn_id 0, trans_id 1, handle 46[0m
+
+[0;32mI (11988) GATTS_DEMO: GATT_WRITE_EVT, value len 1, value :[0m
+[0;32mI (11988) GATTS_DEMO: 00[0m
+[0;32mI (11998) app_driver: Light OFF[0m
+[0;32mI (17928) GATTS_DEMO: GATT_WRITE_EVT, conn_id 0, trans_id 2, handle 46[0m
+
+[0;32mI (17928) GATTS_DEMO: GATT_WRITE_EVT, value len 1, value :[0m
+[0;32mI (17928) GATTS_DEMO: 01[0m
+[0;32mI (17938) app_driver: Light ON[0m

@@ -1,0 +1,102 @@
+Command: e:\esp\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe e:\esp\ESP-IDFcontainer\v5.5.1\esp-idf\tools/idf_monitor.py -p COM3 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c3 --revision 3 --decode-panic backtrace E:\esp\book-esp32c3-iot-projects\test_case\https_server\build\https_server.elf E:\esp\book-esp32c3-iot-projects\test_case\https_server\build\bootloader\bootloader.elf --force-color -m 'e:\esp\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'e:\esp\ESP-IDFcontainer\v5.5.1\esp-idf\tools\idf.py'
+8xxxxx�ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xd (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x15ac
+load:0x403cbf10,len:0xc34
+load:0x403ce710,len:0x2fd0
+entry 0x403cbf1a
+[0;32mI (30) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Sep 24 2025 07:16:55[0m
+[0;32mI (30) boot: chip revision: v0.4[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (34) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (38) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 sec_cert         unknown          3f 06 0000d000 00003000[0m
+[0;32mI (65) boot:  1 nvs              WiFi data        01 02 00010000 00006000[0m
+[0;32mI (72) boot:  2 otadata          OTA data         01 00 00016000 00002000[0m
+[0;32mI (78) boot:  3 phy_init         RF data          01 01 00018000 00001000[0m
+[0;32mI (85) boot:  4 ota_0            OTA app          00 10 00020000 00190000[0m
+[0;32mI (91) boot:  5 ota_1            OTA app          00 11 001b0000 00190000[0m
+[0;32mI (98) boot:  6 fctry            WiFi data        01 02 00340000 00006000[0m
+[0;32mI (104) boot: End of partition table[0m
+[0;32mI (108) esp_image: segment 0: paddr=00020020 vaddr=3c0c0020 size=1ffb8h (131000) map[0m
+[0;32mI (136) esp_image: segment 1: paddr=0003ffe0 vaddr=3fc95200 size=00038h (    56) load[0m
+[0;32mI (136) esp_image: segment 2: paddr=00040020 vaddr=42000020 size=b451ch (738588) map[0m
+[0;32mI (257) esp_image: segment 3: paddr=000f4544 vaddr=3fc95238 size=02dech ( 11756) load[0m
+[0;32mI (260) esp_image: segment 4: paddr=000f7338 vaddr=40380000 size=151ech ( 86508) load[0m
+[0;32mI (277) esp_image: segment 5: paddr=0010c52c vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (284) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (284) boot: Disabling RNG early entropy source...[0m
+[0;32mI (295) cpu_start: Unicore app[0m
+[0;32mI (303) cpu_start: Pro cpu start user code[0m
+[0;32mI (303) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (303) app_init: Application information:[0m
+[0;32mI (303) app_init: Project name:     https_server[0m
+[0;32mI (308) app_init: App version:      04d7331-dirty[0m
+[0;32mI (312) app_init: Compile time:     Sep 24 2025 07:16:04[0m
+[0;32mI (317) app_init: ELF file SHA256:  9a44701ad...[0m
+[0;32mI (321) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (325) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (329) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (333) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (337) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (343) heap_init: At 3FC9C5D0 len 00023A30 (142 KiB): RAM[0m
+[0;32mI (348) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (354) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (360) heap_init: At 50000020 len 00001FC8 (7 KiB): RTCRAM[0m
+[0;32mI (367) spi_flash: detected chip: generic[0m
+[0;32mI (369) spi_flash: flash io: dio[0m
+[0;32mI (373) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (379) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (386) main_task: Started on CPU0[0m
+[0;32mI (416) main_task: Calling app_main()[0m
+[1;31mE (416) https server: app_main[0m
+[0;32mI (416) https server: NVS Flash initialization[0m
+[0;32mI (416) https server: Application driver initialization[0m
+[0;32mI (436) https server: Wi-Fi initialization[0m
+[0;32mI (446) pp: pp rom version: 9387209[0m
+[0;32mI (446) net80211: net80211 rom version: 9387209[0m
+[0;32mI (456) wifi:wifi driver task: 3fca5e48, prio:23, stack:6656, core=0[0m
+[0;32mI (456) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (456) wifi:wifi certification version: v7.0[0m
+[0;32mI (456) wifi:config NVS flash: enabled[0m
+[0;32mI (456) wifi:config nano formatting: disabled[0m
+[0;32mI (466) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (466) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (466) wifi:Init management short buffer num: 32[0m
+[0;32mI (476) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (476) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (486) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (486) wifi:Init static rx buffer num: 10[0m
+[0;32mI (496) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (496) wifi_init: rx ba win: 6[0m
+[0;32mI (496) wifi_init: accept mbox: 6[0m
+[0;32mI (496) wifi_init: tcpip mbox: 32[0m
+[0;32mI (506) wifi_init: udp mbox: 6[0m
+[0;32mI (506) wifi_init: tcp mbox: 6[0m
+[0;32mI (506) wifi_init: tcp tx win: 5760[0m
+[0;32mI (516) wifi_init: tcp rx win: 5760[0m
+[0;32mI (516) wifi_init: tcp mss: 1440[0m
+[0;32mI (516) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (526) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (526) https server: Wi-Fi Station initialization[0m
+[0;33mW (536) wifi:Password length is zero, but authmode threshold is 3, making it impossible to connect to an AP with authmode OPEN[0m
+[0;32mI (566) phy_init: phy_version 1201,bae5dd99,Mar  3 2025,15:36:21[0m
+[0;32mI (606) wifi:mode : sta (e8:06:90:66:ab:58)[0m
+[0;32mI (606) wifi:enable tsf[0m
+[0;32mI (606) https server: wifi_station_initialize finished.[0m
+[0;32mI (3016) https server: retry to connect to the AP[0m
+[0;32mI (3016) https server: connect to the AP fail[0m
+[0;32mI (5426) https server: retry to connect to the AP[0m
+[0;32mI (5426) https server: connect to the AP fail[0m
+[0;32mI (7826) https server: retry to connect to the AP[0m
+[0;32mI (7836) https server: connect to the AP fail[0m
+[0;32mI (10236) https server: retry to connect to the AP[0m
+[0;32mI (10236) https server: connect to the AP fail[0m

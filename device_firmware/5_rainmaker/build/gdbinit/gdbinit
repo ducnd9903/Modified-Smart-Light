@@ -1,0 +1,2 @@
+source /home/duc/esp/book-esp32c3-iot-projects/device_firmware/5_rainmaker/build/gdbinit/symbols
+source /home/duc/esp/book-esp32c3-iot-projects/device_firmware/5_rainmaker/build/gdbinit/connect

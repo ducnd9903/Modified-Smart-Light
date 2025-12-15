@@ -1,0 +1,2 @@
+source E:/esp/book-esp32c3-iot-projects/test_case/local_control/build/gdbinit/symbols
+source E:/esp/book-esp32c3-iot-projects/test_case/local_control/build/gdbinit/connect

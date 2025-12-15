@@ -1,0 +1,21 @@
+Command: ninja all
+[1/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/app_main.c.obj
+E:/esp/book-esp32c3-iot-projects/test_case/https_server/main/app_main.c:172:18: warning: 'esp_start_webserver' defined but not used [-Wunused-function]
+  172 | static esp_err_t esp_start_webserver()
+      |                  ^~~~~~~~~~~~~~~~~~~
+[2/9] Linking C static library esp-idf\main\libmain.a
+[3/9] Performing build step for 'bootloader'
+[1/1] C:\Windows\system32\cmd.exe /C "cd /D E:\esp\book-esp32c3-iot-projects\test_case\https_server\build\bootloader\esp-idf\esptool_py && e:\esp\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe E:/esp/ESP-IDFcontainer/v5.5.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 E:/esp/book-esp32c3-iot-projects/test_case/https_server/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5210 bytes. 0x2df0 bytes (36%) free.
+[4/9] No install step for 'bootloader'
+[5/9] Completed 'bootloader'
+[6/9] Generating esp-idf/esp_system/ld/sections.ld
+[7/9] Linking CXX executable https_server.elf
+[8/9] Generating binary image from built executable
+esptool.py v4.10.0
+Creating esp32c3 image...
+Merged 1 ELF section
+Successfully created esp32c3 image.
+Generated E:/esp/book-esp32c3-iot-projects/test_case/https_server/build/https_server.bin
+[9/9] C:\Windows\system32\cmd.exe /C "cd /D E:\esp\book-esp32c3-iot-projects\test_case\https_server\build\esp-idf\esptool_py && e:\esp\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe E:/esp/ESP-IDFcontainer/v5.5.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app E:/esp/book-esp32c3-iot-projects/test_case/https_server/build/partition_table/partition-table.bin E:/esp/book-esp32c3-iot-projects/test_case/https_server/build/https_server.bin"
+https_server.bin binary size 0xec5a0 bytes. Smallest app partition is 0x190000 bytes. 0xa3a60 bytes (41%) free.

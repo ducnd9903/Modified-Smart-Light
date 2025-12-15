@@ -1,0 +1,55 @@
+Command: /home/duc/.espressif/python_env/idf5.5_py3.13_env/bin/python /home/duc/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c3 --revision 3 --decode-panic backtrace /home/duc/esp/Insights/7_insights/build/7_insights.elf /home/duc/esp/Insights/7_insights/build/bootloader/bootloader.elf -m '/home/duc/.espressif/python_env/idf5.5_py3.13_env/bin/python' '/home/duc/esp/esp-idf/tools/idf.py'
+[0;33m--- esp-idf-monitor 1.8.0 on /dev/ttyUSB0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x403cbf10: [0;33mesp_bootloader_get_description[0m[0m at [0;32m/home/duc/esp/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m39[0m
+[0m--- 0x403ce710: [0;33mesp_flash_encryption_enabled[0m[0m at [0;32m/home/duc/esp/esp-idf/components/bootloader_support/src/flash_encrypt.c[0m[0m:[1;31m89[0m
+[0m--- 0x403cbf1a: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/duc/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x4038b880: [0;33mpanic_abort[0m[0m at [0;32m/home/duc/esp/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m483[0m
+[0m--- 0x4038c5e4: [0;33mpxPortInitialiseStack[0m[0m at [0;32m/home/duc/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c[0m[0m:[1;31m372[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32m/home/duc/esp/esp-idf/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x4038b970: [0;33mesp_restart_noos[0m[0m at [0;32m/home/duc/esp/esp-idf/components/esp_system/port/soc/esp32c3/system_internal.c[0m[0m:[1;31m115[0m
+[0m--- 0x403cbf10: [0;33mesp_bootloader_get_description[0m[0m at [0;32m/home/duc/esp/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m39[0m
+[0m--- 0x403ce710: [0;33mesp_flash_encryption_enabled[0m[0m at [0;32m/home/duc/esp/esp-idf/components/bootloader_support/src/flash_encrypt.c[0m[0m:[1;31m89[0m
+[0m--- 0x403cbf1a: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/duc/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x4038b880: [0;33mpanic_abort[0m[0m at [0;32m/home/duc/esp/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m483[0m
+[0m--- 0x4038c5e4: [0;33mpxPortInitialiseStack[0m[0m at [0;32m/home/duc/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c[0m[0m:[1;31m372[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32m/home/duc/esp/esp-idf/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x4038b970: [0;33mesp_restart_noos[0m[0m at [0;32m/home/duc/esp/esp-idf/components/esp_system/port/soc/esp32c3/system_internal.c[0m[0m:[1;31m115[0m
+[0m--- 0x403cbf10: [0;33mesp_bootloader_get_description[0m[0m at [0;32m/home/duc/esp/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m39[0m
+[0m--- 0x403ce710: [0;33mesp_flash_encryption_enabled[0m[0m at [0;32m/home/duc/esp/esp-idf/components/bootloader_support/src/flash_encrypt.c[0m[0m:[1;31m89[0m
+[0m--- 0x403cbf1a: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/duc/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x4038b880: [0;33mpanic_abort[0m[0m at [0;32m/home/duc/esp/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m483[0m
+[0m--- 0x4038c5e4: [0;33mpxPortInitialiseStack[0m[0m at [0;32m/home/duc/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c[0m[0m:[1;31m372[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32m/home/duc/esp/esp-idf/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x4038b970: [0;33mesp_restart_noos[0m[0m at [0;32m/home/duc/esp/esp-idf/components/esp_system/port/soc/esp32c3/system_internal.c[0m[0m:[1;31m115[0m
+[0m--- 0x403cbf10: [0;33mesp_bootloader_get_description[0m[0m at [0;32m/home/duc/esp/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m39[0m
+[0m--- 0x403ce710: [0;33mesp_flash_encryption_enabled[0m[0m at [0;32m/home/duc/esp/esp-idf/components/bootloader_support/src/flash_encrypt.c[0m[0m:[1;31m89[0m
+[0m--- 0x403cbf1a: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/duc/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x4038b880: [0;33mpanic_abort[0m[0m at [0;32m/home/duc/esp/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m483[0m
+[0m--- 0x4038c5e4: [0;33mpxPortInitialiseStack[0m[0m at [0;32m/home/duc/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c[0m[0m:[1;31m372[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32m/home/duc/esp/esp-idf/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x4038b970: [0;33mesp_restart_noos[0m[0m at [0;32m/home/duc/esp/esp-idf/components/esp_system/port/soc/esp32c3/system_internal.c[0m[0m:[1;31m115[0m
+[0m--- 0x403cbf10: [0;33mesp_bootloader_get_description[0m[0m at [0;32m/home/duc/esp/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m39[0m
+[0m--- 0x403ce710: [0;33mesp_flash_encryption_enabled[0m[0m at [0;32m/home/duc/esp/esp-idf/components/bootloader_support/src/flash_encrypt.c[0m[0m:[1;31m89[0m
+[0m--- 0x403cbf1a: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/duc/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m

@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+E:/esp/book-esp32c3-iot-projects/test_case/gatt_server/build/CMakeFiles/bootloader
+E:/esp/book-esp32c3-iot-projects/test_case/gatt_server/build/CMakeFiles/bootloader.rule
+E:/esp/book-esp32c3-iot-projects/test_case/gatt_server/build/CMakeFiles/bootloader-complete.rule
+E:/esp/book-esp32c3-iot-projects/test_case/gatt_server/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+E:/esp/book-esp32c3-iot-projects/test_case/gatt_server/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+E:/esp/book-esp32c3-iot-projects/test_case/gatt_server/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+E:/esp/book-esp32c3-iot-projects/test_case/gatt_server/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+E:/esp/book-esp32c3-iot-projects/test_case/gatt_server/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+E:/esp/book-esp32c3-iot-projects/test_case/gatt_server/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+E:/esp/book-esp32c3-iot-projects/test_case/gatt_server/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

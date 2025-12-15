@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/home/duc/esp/book-esp32c3-iot-projects/device_firmware/5_rainmaker/build/CMakeFiles/bootloader
+/home/duc/esp/book-esp32c3-iot-projects/device_firmware/5_rainmaker/build/CMakeFiles/bootloader.rule
+/home/duc/esp/book-esp32c3-iot-projects/device_firmware/5_rainmaker/build/CMakeFiles/bootloader-complete.rule
+/home/duc/esp/book-esp32c3-iot-projects/device_firmware/5_rainmaker/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/home/duc/esp/book-esp32c3-iot-projects/device_firmware/5_rainmaker/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/duc/esp/book-esp32c3-iot-projects/device_firmware/5_rainmaker/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/duc/esp/book-esp32c3-iot-projects/device_firmware/5_rainmaker/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/duc/esp/book-esp32c3-iot-projects/device_firmware/5_rainmaker/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/duc/esp/book-esp32c3-iot-projects/device_firmware/5_rainmaker/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/duc/esp/book-esp32c3-iot-projects/device_firmware/5_rainmaker/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

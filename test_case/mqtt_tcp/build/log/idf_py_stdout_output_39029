@@ -1,0 +1,19 @@
+Command: ninja all
+[1/10] Performing build step for 'bootloader'
+[1/1] cd /home/duc/esp/book-esp32c3-iot-projects/test_case/mqtt_tcp/build/bootloader/esp-idf/esptool_py && /home/duc/.espressif/python_env/idf5.5_py3.13_env/bin/python /home/duc/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/duc/esp/book-esp32c3-iot-projects/test_case/mqtt_tcp/build/bootloader/bootloader.bin
+Bootloader binary size 0x5210 bytes. 0x2df0 bytes (36%) free.
+[2/10] No install step for 'bootloader'
+[3/10] Completed 'bootloader'
+[4/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/app_main.c.obj
+[5/10] Linking C static library esp-idf/main/libmain.a
+[6/10] Generating esp-idf/esp_system/ld/sections.ld
+[7/10] Building C object CMakeFiles/mqtt_tcp.elf.dir/project_elf_src_esp32c3.c.obj
+[8/10] Linking CXX executable mqtt_tcp.elf
+[9/10] Generating binary image from built executable
+esptool.py v4.10.0
+Creating esp32c3 image...
+Merged 1 ELF section
+Successfully created esp32c3 image.
+Generated /home/duc/esp/book-esp32c3-iot-projects/test_case/mqtt_tcp/build/mqtt_tcp.bin
+[10/10] cd /home/duc/esp/book-esp32c3-iot-projects/test_case/mqtt_tcp/build/esp-idf/esptool_py && /home/duc/.espressif/python_env/idf5.5_py3.13_env/bin/python /home/duc/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/duc/esp/book-esp32c3-iot-projects/test_case/mqtt_tcp/build/partition_table/partition-table.bin /home/duc/esp/book-esp32c3-iot-projects/test_case/mqtt_tcp/build/mqtt_tcp.bin
+mqtt_tcp.bin binary size 0xe8ec0 bytes. Smallest app partition is 0x100000 bytes. 0x17140 bytes (9%) free.

@@ -1,0 +1,5 @@
+[v3_req]
+subjectAltName = @alt_names
+
+[alt_names]
+DNS.1 = my_esp_ctrl_device.local

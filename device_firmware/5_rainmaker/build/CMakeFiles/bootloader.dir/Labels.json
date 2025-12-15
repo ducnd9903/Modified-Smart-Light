@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/duc/esp/book-esp32c3-iot-projects/device_firmware/5_rainmaker/build/CMakeFiles/bootloader"
+		},
+		{
+			"file" : "/home/duc/esp/book-esp32c3-iot-projects/device_firmware/5_rainmaker/build/CMakeFiles/bootloader.rule"
+		},
+		{
+			"file" : "/home/duc/esp/book-esp32c3-iot-projects/device_firmware/5_rainmaker/build/CMakeFiles/bootloader-complete.rule"
+		},
+		{
+			"file" : "/home/duc/esp/book-esp32c3-iot-projects/device_firmware/5_rainmaker/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
+		},
+		{
+			"file" : "/home/duc/esp/book-esp32c3-iot-projects/device_firmware/5_rainmaker/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
+		},
+		{
+			"file" : "/home/duc/esp/book-esp32c3-iot-projects/device_firmware/5_rainmaker/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
+		},
+		{
+			"file" : "/home/duc/esp/book-esp32c3-iot-projects/device_firmware/5_rainmaker/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
+		},
+		{
+			"file" : "/home/duc/esp/book-esp32c3-iot-projects/device_firmware/5_rainmaker/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
+		},
+		{
+			"file" : "/home/duc/esp/book-esp32c3-iot-projects/device_firmware/5_rainmaker/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
+		},
+		{
+			"file" : "/home/duc/esp/book-esp32c3-iot-projects/device_firmware/5_rainmaker/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"bootloader"
+		],
+		"name" : "bootloader"
+	}
+}

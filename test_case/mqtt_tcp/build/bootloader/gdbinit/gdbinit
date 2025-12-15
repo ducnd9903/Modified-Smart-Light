@@ -1,0 +1,2 @@
+source /home/duc/esp/book-esp32c3-iot-projects/test_case/mqtt_tcp/build/bootloader/gdbinit/symbols
+source /home/duc/esp/book-esp32c3-iot-projects/test_case/mqtt_tcp/build/bootloader/gdbinit/connect

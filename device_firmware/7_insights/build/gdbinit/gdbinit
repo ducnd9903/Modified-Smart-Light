@@ -1,0 +1,2 @@
+source /home/duc/esp/Insights/7_insights/build/gdbinit/symbols
+source /home/duc/esp/Insights/7_insights/build/gdbinit/connect

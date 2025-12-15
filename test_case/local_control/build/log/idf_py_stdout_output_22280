@@ -1,0 +1,273 @@
+Command: e:\esp\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe e:\esp\ESP-IDFcontainer\v5.5.1\esp-idf\tools/idf_monitor.py -p COM3 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c3 --revision 3 --decode-panic backtrace E:\esp\book-esp32c3-iot-projects\test_case\local_control\build\local_control.elf E:\esp\book-esp32c3-iot-projects\test_case\local_control\build\bootloader\bootloader.elf --force-color -m 'e:\esp\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'e:\esp\ESP-IDFcontainer\v5.5.1\esp-idf\tools\idf.py'
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xd (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x15ac
+load:0x403cbf10,len:0xc34
+load:0x403ce710,len:0x2fd0
+entry 0x403cbf1a
+[0;32mI (30) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Sep 24 2025 08:09:32[0m
+[0;32mI (30) boot: chip revision: v0.4[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (34) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (38) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 sec_cert         unknown          3f 06 0000d000 00003000[0m
+[0;32mI (65) boot:  1 nvs              WiFi data        01 02 00010000 00006000[0m
+[0;32mI (72) boot:  2 otadata          OTA data         01 00 00016000 00002000[0m
+[0;32mI (78) boot:  3 phy_init         RF data          01 01 00018000 00001000[0m
+[0;32mI (85) boot:  4 ota_0            OTA app          00 10 00020000 00190000[0m
+[0;32mI (91) boot:  5 ota_1            OTA app          00 11 001b0000 00190000[0m
+[0;32mI (98) boot:  6 fctry            WiFi data        01 02 00340000 00006000[0m
+[0;32mI (104) boot: End of partition table[0m
+[0;32mI (108) boot: No factory image, trying OTA 0[0m
+[0;32mI (112) esp_image: segment 0: paddr=00020020 vaddr=3c0d0020 size=24b78h (150392) map[0m
+[0;32mI (143) esp_image: segment 1: paddr=00044ba0 vaddr=3fc95400 size=02each ( 11948) load[0m
+[0;32mI (146) esp_image: segment 2: paddr=00047a54 vaddr=40380000 size=085c4h ( 34244) load[0m
+[0;32mI (153) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=c59f4h (809460) map[0m
+[0;32mI (283) esp_image: segment 4: paddr=00115a1c vaddr=403885c4 size=0cc30h ( 52272) load[0m
+[0;32mI (293) esp_image: segment 5: paddr=00122654 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (300) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (338) boot: Set actual ota_seq=1 in otadata[0][0m
+[0;32mI (338) boot: Disabling RNG early entropy source...[0m
+[0;32mI (347) cpu_start: Unicore app[0m
+[0;32mI (356) cpu_start: Pro cpu start user code[0m
+[0;32mI (356) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (356) app_init: Application information:[0m
+[0;32mI (356) app_init: Project name:     local_control[0m
+[0;32mI (360) app_init: App version:      04d7331-dirty[0m
+[0;32mI (365) app_init: Compile time:     Sep 24 2025 20:58:16[0m
+[0;32mI (370) app_init: ELF file SHA256:  64ec35dc2...[0m
+[0;32mI (374) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (378) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (382) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (386) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (389) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (396) heap_init: At 3FC9D140 len 00022EC0 (139 KiB): RAM[0m
+[0;32mI (401) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (407) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (413) heap_init: At 50000020 len 00001FC8 (7 KiB): RTCRAM[0m
+[0;32mI (419) spi_flash: detected chip: generic[0m
+[0;32mI (422) spi_flash: flash io: dio[0m
+[0;32mI (425) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (431) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (438) main_task: Started on CPU0[0m
+[0;32mI (468) main_task: Calling app_main()[0m
+[1;31mE (468) local control: app_main[0m
+[0;32mI (468) local control: NVS Flash initialization[0m
+[0;32mI (468) local control: Application driver initialization[0m
+[0;32mI (488) local control: Wi-Fi initialization[0m
+[0;32mI (498) pp: pp rom version: 9387209[0m
+[0;32mI (498) net80211: net80211 rom version: 9387209[0m
+[0;32mI (508) wifi:wifi driver task: 3fca69d8, prio:23, stack:6656, core=0[0m
+[0;32mI (508) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (508) wifi:wifi certification version: v7.0[0m
+[0;32mI (508) wifi:config NVS flash: enabled[0m
+[0;32mI (508) wifi:config nano formatting: disabled[0m
+[0;32mI (518) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (518) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (528) wifi:Init management short buffer num: 32[0m
+[0;32mI (528) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (528) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (538) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (538) wifi:Init static rx buffer num: 10[0m
+[0;32mI (548) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (548) wifi_init: rx ba win: 6[0m
+[0;32mI (548) wifi_init: accept mbox: 6[0m
+[0;32mI (558) wifi_init: tcpip mbox: 32[0m
+[0;32mI (558) wifi_init: udp mbox: 6[0m
+[0;32mI (558) wifi_init: tcp mbox: 6[0m
+[0;32mI (558) wifi_init: tcp tx win: 5760[0m
+[0;32mI (568) wifi_init: tcp rx win: 5760[0m
+[0;32mI (568) wifi_init: tcp mss: 1440[0m
+[0;32mI (568) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (578) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (578) local control: Wi-Fi Station initialization[0m
+[0;32mI (588) phy_init: phy_version 1201,bae5dd99,Mar  3 2025,15:36:21[0m
+[0;32mI (618) wifi:mode : sta (e8:06:90:66:41:fc)[0m
+[0;32mI (618) wifi:enable tsf[0m
+[0;32mI (618) local control: wifi_station_initialize finished.[0m
+[0;32mI (628) wifi:new:<3,1>, old:<1,0>, ap:<255,255>, sta:<3,1>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (628) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (638) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (648) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (738) wifi:connected with P.205, aid = 1, channel 3, 40U, bssid = 20:23:51:2d:25:de[0m
+[0;32mI (748) wifi:security: WPA2-PSK, phy: bgn, rssi: -42[0m
+[0;32mI (748) wifi:pm start, type: 1[0m
+
+[0;32mI (748) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (758) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (768) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (798) wifi:<ba-add>idx:0 (ifx:0, 20:23:51:2d:25:de), tid:0, ssn:6, winSize:64[0m
+[0;32mI (1798) esp_netif_handlers: sta ip: 192.168.22.45, mask: 255.255.255.0, gw: 192.168.22.1[0m
+[0;32mI (1798) local control: got ip:192.168.22.45[0m
+[0;32mI (1798) local control: connected to ap SSID:P.205 password:4817ngosilien[0m
+[0;32mI (1798) local control: Server certificate length: 1123[0m
+[0;32mI (1808) local control: CA certificate length: 0[0m
+[0;32mI (1808) local control: Private key length: 1733[0m
+[0;32mI (1818) local control: Server certificate start: 0x3c0e7764[0m
+[0;32mI (1818) local control: Private key start: 0x3c0e7bcb[0m
+[0;32mI (1828) mdns_mem: mDNS task will be created from internal RAM[0m
+[0;32mI (1828) esp_https_server: Starting server[0m
+[0;32mI (1838) esp_https_server: Server listening on port 443[0m
+[0;32mI (1838) local control: esp_local_ctrl service started with name : my_esp_ctrl_device[0m
+[0;32mI (1848) local control: [00] Hello world![0m
+[0;32mI (4058) esp_https_server: performing session handshake[0m
+[0;33mW (5328) httpd_uri: httpd_uri: URI '/' not found[0m
+[0;33mW (5328) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;32mI (6848) local control: [01] Hello world![0m
+[0;32mI (11848) local control: [02] Hello world![0m
+[0;32mI (16848) local control: [03] Hello world![0m
+[0;32mI (21848) local control: [04] Hello world![0m
+[0;32mI (26848) local control: [05] Hello world![0m
+[0;32mI (31848) local control: [06] Hello world![0m
+[0;32mI (36848) local control: [07] Hello world![0m
+[0;32mI (41848) local control: [08] Hello world![0m
+[0;32mI (46848) local control: [09] Hello world![0m
+[0;32mI (47688) esp_https_server: performing session handshake[0m
+[1;31mE (48388) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x7780[0m
+[1;31mE (48388) esp_https_server: esp_tls_create_server_session failed, 0x7780[0m
+[1;31mE (48388) httpd: httpd_accept_conn: session creation failed[0m
+[0;33mW (48398) httpd: httpd_server: error accepting new connection[0m
+[0;32mI (50348) esp_https_server: performing session handshake[0m
+[1;31mE (51058) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x7780[0m
+[1;31mE (51058) esp_https_server: esp_tls_create_server_session failed, 0x7780[0m
+[1;31mE (51058) httpd: httpd_accept_conn: session creation failed[0m
+[0;33mW (51068) httpd: httpd_server: error accepting new connection[0m
+[0;32mI (51068) esp_https_server: performing session handshake[0m
+[0;32mI (51968) local control: [10] Hello world![0m
+[0;33mW (52018) httpd_uri: httpd_uri: URI '/' not found[0m
+[0;33mW (52018) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;32mI (52178) esp_https_server: performing session handshake[0m
+[1;31mE (52888) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x7780[0m
+[1;31mE (52888) esp_https_server: esp_tls_create_server_session failed, 0x7780[0m
+[1;31mE (52888) httpd: httpd_accept_conn: session creation failed[0m
+[0;33mW (52898) httpd: httpd_server: error accepting new connection[0m
+[0;32mI (52898) esp_https_server: performing session handshake[0m
+[0;33mW (53998) httpd_uri: httpd_uri: URI '/favicon.ico' not found[0m
+[0;33mW (53998) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;32mI (56968) local control: [11] Hello world![0m
+[0;32mI (61968) local control: [12] Hello world![0m
+[0;32mI (66968) local control: [13] Hello world![0m
+[0;32mI (71968) local control: [14] Hello world![0m
+[0;32mI (76968) local control: [15] Hello world![0m
+[0;32mI (81968) local control: [16] Hello world![0m
+[0;32mI (86968) local control: [17] Hello world![0m
+[0;32mI (91968) local control: [18] Hello world![0m
+[0;32mI (96968) local control: [19] Hello world![0m
+[0;32mI (101968) local control: [20] Hello world![0m
+[0;32mI (106968) local control: [21] Hello world![0m
+[0;32mI (111968) local control: [22] Hello world![0m
+[0;32mI (116968) local control: [23] Hello world![0m
+[0;32mI (121968) local control: [24] Hello world![0m
+[0;32mI (126968) local control: [25] Hello world![0m
+[0;32mI (131968) local control: [26] Hello world![0m
+[0;32mI (133188) esp_https_server: performing session handshake[0m
+[1;31mE (133898) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x7780[0m
+[1;31mE (133898) esp_https_server: esp_tls_create_server_session failed, 0x7780[0m
+[1;31mE (133898) httpd: httpd_accept_conn: session creation failed[0m
+[0;33mW (133898) httpd: httpd_server: error accepting new connection[0m
+[0;32mI (136868) esp_https_server: performing session handshake[0m
+[0;32mI (137258) local control: [27] Hello world![0m
+[1;31mE (137578) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x7780[0m
+[1;31mE (137578) esp_https_server: esp_tls_create_server_session failed, 0x7780[0m
+[1;31mE (137588) httpd: httpd_accept_conn: session creation failed[0m
+[0;33mW (137588) httpd: httpd_server: error accepting new connection[0m
+[0;32mI (137598) esp_https_server: performing session handshake[0m
+[0;33mW (138998) httpd_uri: httpd_uri: Method '1' not allowed for URI '/esp_local_ctrl/control'[0m
+[0;33mW (138998) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;32mI (139068) esp_https_server: performing session handshake[0m
+[1;31mE (139778) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x7780[0m
+[1;31mE (139778) esp_https_server: esp_tls_create_server_session failed, 0x7780[0m
+[1;31mE (139778) httpd: httpd_accept_conn: session creation failed[0m
+[0;33mW (139788) httpd: httpd_server: error accepting new connection[0m
+[0;32mI (139788) esp_https_server: performing session handshake[0m
+[0;33mW (140978) httpd_uri: httpd_uri: URI '/favicon.ico' not found[0m
+[0;33mW (140978) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;32mI (142258) local control: [28] Hello world![0m
+[0;32mI (147258) local control: [29] Hello world![0m
+[0;32mI (152258) local control: [30] Hello world![0m
+[0;32mI (157258) local control: [31] Hello world![0m
+[0;32mI (162258) local control: [32] Hello world![0m
+[0;32mI (167258) local control: [33] Hello world![0m
+[0;32mI (172258) local control: [34] Hello world![0m
+[0;32mI (177258) local control: [35] Hello world![0m
+[0;32mI (182258) local control: [36] Hello world![0m
+[0;32mI (187258) local control: [37] Hello world![0m
+[0;32mI (192258) local control: [38] Hello world![0m
+[0;32mI (197258) local control: [39] Hello world![0m
+[0;32mI (202258) local control: [40] Hello world![0m
+[0;32mI (207258) local control: [41] Hello world![0m
+[0;32mI (212258) local control: [42] Hello world![0m
+[0;32mI (217258) local control: [43] Hello world![0m
+[0;32mI (222258) local control: [44] Hello world![0m
+[0;32mI (227258) local control: [45] Hello world![0m
+[0;32mI (232258) local control: [46] Hello world![0m
+[0;32mI (237258) local control: [47] Hello world![0m
+[0;32mI (242258) local control: [48] Hello world![0m
+[0;32mI (247258) local control: [49] Hello world![0m
+[0;32mI (252258) local control: [50] Hello world![0m
+[0;32mI (257258) local control: [51] Hello world![0m
+[0;32mI (262258) local control: [52] Hello world![0m
+[0;32mI (267258) local control: [53] Hello world![0m
+[0;32mI (272258) local control: [54] Hello world![0m
+[0;32mI (277258) local control: [55] Hello world![0m
+[0;32mI (282258) local control: [56] Hello world![0m
+[0;32mI (287258) local control: [57] Hello world![0m
+[0;32mI (292258) local control: [58] Hello world![0m
+[0;32mI (297258) local control: [59] Hello world![0m
+[0;32mI (302258) local control: [60] Hello world![0m
+[0;32mI (307258) local control: [61] Hello world![0m
+[0;32mI (312258) local control: [62] Hello world![0m
+[0;32mI (317258) local control: [63] Hello world![0m
+[0;32mI (322258) local control: [64] Hello world![0m
+[0;32mI (327258) local control: [65] Hello world![0m
+[0;32mI (332258) local control: [66] Hello world![0m
+[0;32mI (337258) local control: [67] Hello world![0m
+[0;32mI (342258) local control: [68] Hello world![0m
+[0;32mI (347258) local control: [69] Hello world![0m
+[0;32mI (352258) local control: [70] Hello world![0m
+[0;32mI (357258) local control: [71] Hello world![0m
+[0;32mI (362258) local control: [72] Hello world![0m
+[0;32mI (367258) local control: [73] Hello world![0m
+[0;32mI (372258) local control: [74] Hello world![0m
+[0;32mI (377258) local control: [75] Hello world![0m
+[0;32mI (382258) local control: [76] Hello world![0m
+[0;32mI (387258) local control: [77] Hello world![0m
+[0;32mI (392258) local control: [78] Hello world![0m
+[0;32mI (397258) local control: [79] Hello world![0m
+[0;32mI (402258) local control: [80] Hello world![0m
+[0;32mI (407258) local control: [81] Hello world![0m
+[0;32mI (412258) local control: [82] Hello world![0m
+[0;32mI (417258) local control: [83] Hello world![0m
+[0;32mI (422258) local control: [84] Hello world![0m
+[0;32mI (427258) local control: [85] Hello world![0m
+[0;32mI (432258) local control: [86] Hello world![0m
+[0;32mI (437258) local control: [87] Hello world![0m
+[0;32mI (442258) local control: [88] Hello world![0m
+[0;32mI (447258) local control: [89] Hello world![0m
+[0;32mI (452258) local control: [90] Hello world![0m
+[0;32mI (457258) local control: [91] Hello world![0m
+[0;32mI (462258) local control: [92] Hello world![0m
+[0;32mI (467258) local control: [93] Hello world![0m
+[0;32mI (472258) local control: [94] Hello world![0m
+[0;32mI (477258) local control: [95] Hello world![0m
+[0;32mI (482258) local control: [96] Hello world![0m
+[0;32mI (487258) local control: [97] Hello world![0m
+[0;32mI (492258) local control: [98] Hello world![0m
+[0;32mI (497258) local control: [99] Hello world![0m
+[0;32mI (502258) local control: [100] Hello world![0m
+[0;32mI (507258) local control: [101] Hello world![0m
+[0;32mI (512258) local control: [102] Hello world![0m
+[0;32mI (517258) local control: [103] Hello world![0m
+[0;32mI (522258) local control: [104] Hello world![0m
+[0;32mI (527258) local control: [105] Hello world![0m
+[0;32mI (532258) local control: [106] Hello world![0m
+[0;32mI (537258) local control: [107] Hello world![0m
+[0;32mI (542258) local control: [108] Hello world![0m

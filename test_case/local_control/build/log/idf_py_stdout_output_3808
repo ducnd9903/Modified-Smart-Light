@@ -1,0 +1,11 @@
+Command: ninja all
+[0/1] Re-running CMake...
+-- Minimal build - OFF
+-- ccache will be used for faster recompilation
+-- Building ESP-IDF components for target esp32c3
+NOTICE: Processing 2 dependencies:
+NOTICE: [1/2] espressif/mdns (1.8.2)
+NOTICE: [2/2] idf (5.5.1)
+-- Configuring incomplete, errors occurred!
+FAILED: build.ninja 
+E:\esp\Espressif\tools\cmake\3.30.2\bin\cmake.exe --regenerate-during-build -SE:\esp\book-esp32c3-iot-projects\test_case\local_control -BE:\esp\book-esp32c3-iot-projects\test_case\local_control\build

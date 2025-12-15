@@ -1,0 +1,207 @@
+Command: /home/duc/.espressif/python_env/idf5.5_py3.13_env/bin/python /home/duc/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c3 --revision 3 --decode-panic backtrace /home/duc/esp/book-esp32c3-iot-projects/device_firmware/5_rainmaker/build/5_rainmaker.elf /home/duc/esp/book-esp32c3-iot-projects/device_firmware/5_rainmaker/build/bootloader/bootloader.elf -m '/home/duc/.espressif/python_env/idf5.5_py3.13_env/bin/python' '/home/duc/esp/esp-idf/tools/idf.py'
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xd (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x15ac
+load:0x403cbf10,len:0xc34
+load:0x403ce710,len:0x2fd0
+entry 0x403cbf1a
+[0;32mI (30) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Oct 29 2025 07:25:56[0m
+[0;32mI (30) boot: chip revision: v0.4[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (34) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (38) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 sec_cert         unknown          3f 06 0000d000 00003000[0m
+[0;32mI (65) boot:  1 nvs              WiFi data        01 02 00010000 00006000[0m
+[0;32mI (72) boot:  2 otadata          OTA data         01 00 00016000 00002000[0m
+[0;32mI (78) boot:  3 phy_init         RF data          01 01 00018000 00001000[0m
+[0;32mI (85) boot:  4 ota_0            OTA app          00 10 00020000 00190000[0m
+[0;32mI (91) boot:  5 ota_1            OTA app          00 11 001b0000 00190000[0m
+[0;32mI (98) boot:  6 fctry            WiFi data        01 02 00340000 00006000[0m
+[0;32mI (104) boot: End of partition table[0m
+[0;32mI (108) esp_image: segment 0: paddr=00020020 vaddr=3c120020 size=4e474h (320628) map[0m
+[0;32mI (166) esp_image: segment 1: paddr=0006e49c vaddr=3fc9a600 size=01b7ch (  7036) load[0m
+[0;32mI (168) esp_image: segment 2: paddr=00070020 vaddr=42000020 size=118d84h (1150340) map[0m
+[0;32mI (353) esp_image: segment 3: paddr=00188dac vaddr=3fc9c17c size=01790h (  6032) load[0m
+[0;32mI (355) esp_image: segment 4: paddr=0018a544 vaddr=40380000 size=1a5cch (107980) load[0m
+[0;32mI (377) esp_image: segment 5: paddr=001a4b18 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (385) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (385) boot: Disabling RNG early entropy source...[0m
+[0;32mI (395) cpu_start: Unicore app[0m
+[0;32mI (404) cpu_start: Pro cpu start user code[0m
+[0;32mI (404) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (404) app_init: Application information:[0m
+[0;32mI (404) app_init: Project name:     5_rainmaker[0m
+[0;32mI (408) app_init: App version:      1.0.0[0m
+[0;32mI (412) app_init: Compile time:     Oct 29 2025 07:25:45[0m
+[0;32mI (417) app_init: ELF file SHA256:  da567a827...[0m
+[0;32mI (421) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (425) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (429) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (433) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (437) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (443) heap_init: At 3FCA4190 len 0001BE70 (111 KiB): RAM[0m
+[0;32mI (448) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (454) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (460) heap_init: At 50000020 len 00001FC8 (7 KiB): RTCRAM[0m
+[0;32mI (466) spi_flash: detected chip: generic[0m
+[0;32mI (469) spi_flash: flash io: dio[0m
+[0;32mI (473) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (478) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (485) coexist: coex firmware version: b0bcc39[0m
+[0;32mI (516) coexist: coexist rom version 9387209[0m
+[0;32mI (516) main_task: Started on CPU0[0m
+[0;32mI (516) main_task: Calling app_main()[0m
+[1;31mE (776) rainmaker: app_main[0m
+[0;32mI (776) rainmaker: NVS Flash initialization[0m
+[0;32mI (776) rainmaker: Application driver initialization[0m
+[1;31mE (786) light_driver: Load light status failed[0m
+[0;32mI (806) pp: pp rom version: 9387209[0m
+[0;32mI (806) net80211: net80211 rom version: 9387209[0m
+[0;32mI (816) wifi:wifi driver task: 3fcade84, prio:23, stack:6656, core=0[0m
+[0;32mI (816) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (816) wifi:wifi certification version: v7.0[0m
+[0;32mI (816) wifi:config NVS flash: enabled[0m
+[0;32mI (816) wifi:config nano formatting: disabled[0m
+[0;32mI (826) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (826) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (836) wifi:Init management short buffer num: 32[0m
+[0;32mI (836) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (836) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (846) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (846) wifi:Init static rx buffer num: 10[0m
+[0;32mI (856) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (856) wifi_init: rx ba win: 6[0m
+[0;32mI (856) wifi_init: accept mbox: 6[0m
+[0;32mI (866) wifi_init: tcpip mbox: 32[0m
+[0;32mI (866) wifi_init: udp mbox: 6[0m
+[0;32mI (866) wifi_init: tcp mbox: 6[0m
+[0;32mI (866) wifi_init: tcp tx win: 5760[0m
+[0;32mI (876) wifi_init: tcp rx win: 5760[0m
+[0;32mI (876) wifi_init: tcp mss: 1440[0m
+[0;32mI (876) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (886) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (896) esp_rmaker_work_queue: Work Queue created.[0m
+[0;32mI (896) esp_mqtt_glue: AWS PPI: ?Platform=APN3|A0|RM|EX00|RMDev|1x0|E806906641FC[0m
+[0;32mI (896) esp_mqtt_glue: Initialising MQTT[0m
+[0;32mI (906) esp_rmaker_mqtt_budget: MQTT Budgeting initialised. Default: 100, Max: 1024, Revive count: 1, Revive period: 5[0m
+[0;32mI (916) esp_rmaker_node: Node ID ----- E806906641FC[0m
+[0;32mI (916) esp_rmaker_ota_using_params: OTA enabled with Params[0m
+[0;32mI (926) esp_rmaker_ota: OTA state = 2[0m
+[0;32mI (926) esp_rmaker_time: Initializing SNTP. Using the SNTP server: pool.ntp.org[0m
+[0;32mI (936) esp_rmaker_time_service: Time service enabled[0m
+[0;32mI (936) esp_rmaker_time: SNTP already initialized.[0m
+[0;32mI (946) esp_rmaker_core: Starting RainMaker Work Queue task[0m
+[0;32mI (946) esp_rmaker_work_queue: RainMaker Work Queue task started.[0m
+[0;32mI (956) wifi_prov_scheme_ble: BT memory released[0m
+[0;32mI (956) app_wifi: Starting provisioning[0m
+[0;32mI (976) phy_init: phy_version 1201,bae5dd99,Mar  3 2025,15:36:21[0m
+[0;33mW (976) phy_init: failed to load RF calibration data (0x1102), falling back to full calibration[0m
+[0;32mI (1006) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(2)[0m
+[0;32mI (1016) wifi:mode : sta (e8:06:90:66:41:fc)[0m
+[0;32mI (1016) wifi:enable tsf[0m
+[0;32mI (1016) BLE_INIT: BT controller compile version [2edb0b0][0m
+[0;32mI (1016) BLE_INIT: Using main XTAL as clock source[0m
+[0;32mI (1016) BLE_INIT: Feature Config, ADV:1, BLE_50:1, DTM:1, SCAN:1, CCA:0, SMP:1, CONNECT:1[0m
+[0;32mI (1026) BLE_INIT: Bluetooth MAC: e8:06:90:66:41:fe[0m
+[0;32mI (1036) protocomm_nimble: BLE Host Task Started[0m
+[0;32mI (1036) NimBLE: GAP procedure initiated: stop advertising.[0m
+
+[0;32mI (1046) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (1046) NimBLE: disc_mode=2[0m
+[0;32mI (1046) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=256 adv_itvl_max=256[0m
+[0;32mI (1056) NimBLE: [0m
+
+[0;32mI (1056) wifi_prov_mgr: Provisioning started with service name : PROV_69d160 [0m
+[0;32mI (1066) app_wifi: Provisioning started[0m
+[0;32mI (1066) app_wifi: Scan this QR code from the ESP RainMaker phone app for Provisioning.[0m
+[0;32mI (1086) QRCODE: Encoding below text with ECC LVL 0 & QR Code Version 10[0m
+[0;32mI (1086) QRCODE: {"ver":"v1","name":"PROV_69d160","pop":"74b07cbb","transport":"ble"}[0m
+                                      
+  █▀▀▀▀▀█ █  ▄▄█ ▀▀ ▄▄█ ▄▀  █▀▀▀▀▀█   
+  █ ███ █ ██▄ █▄ ▄▀▀ ▀ ▀█▀▄ █ ███ █   
+  █ ▀▀▀ █ ▄██ ▀▀█▀█▄ ▄▄ ▀▀█ █ ▀▀▀ █   
+  ▀▀▀▀▀▀▀ ▀ █▄▀ ▀ ▀▄█ █▄▀ █ ▀▀▀▀▀▀▀   
+  ██  ▀▀▀   ▀ ▀ ▀█▄▀▄▀▄▀▄▄▄▄ █ ▀█▀▀   
+   █▀▀▀ ▀███▀ ▄▀ ██▄▄▄█▄▄▀██▀▄██▀█    
+  ▀█▀█ ▄▀▄▀ ▄▀▄▄█▄█▀▄▀▄▀▄▀ ▄▀▄▀ ▄▄▀   
+    ▄ █▀▀▄█▀ █▀▀ ▀▄▄ ▄ ██▀▄█ ▀ █▀▀▄   
+  ▀ ▄█  ▀  █▀ ▀▄▄▄█▀▄▀█▀   █▀▄▀▀  ▀   
+  ▀▀█▄██▀█▀ ▄ ▄▀ ▀▀▄ ▄ ▄█▀█ ▄█▄█▀▀▄   
+  ▄██▄  ▀▀ ██▀▄ ▄█▄▀█ ▄█ ▀▀▀▀ ▀ ▄█▀   
+    ▀▄▄▀▀ ▀███▀ ▀█▄▄ ▄ █▄▀  █▀▀▀▀▄▄   
+  ▀▀▀▀ ▀▀▀▄ ▀ ▀▄▄▄▄██▀█▀ ▄█▀▀▀██▄▀    
+  █▀▀▀▀▀█ ▄▀▄ ▄ █▀██▀  ▄█▀█ ▀ ██▀▀    
+  █ ███ █ ▀ ▄▀█▄█▄█▀█▀ ▀█ ███▀█▀▄▄█   
+  █ ▀▀▀ █ ▄▄▄██▀ █▀▄ ▄███▀  ▀█▀▄ ▀    
+  ▀▀▀▀▀▀▀ ▀▀▀▀    ▀▀  ▀▀▀▀▀▀      ▀   
+                                      
+
+[0;32mI (1276) app_wifi: If QR code is not visible, copy paste the below URL in a browser.[0m
+https://rainmaker.espressif.com/qrcode.html?data={"ver":"v1","name":"PROV_69d160","pop":"74b07cbb","transport":"ble"}
+[0;32mI (1286) app_wifi: Provisioning Started. Name : PROV_69d160, POP : 74b07cbb[0m
+[0;32mI (19196) protocomm_nimble: mtu update event; conn_handle=1 cid=4 mtu=256[0m
+[0;32mI (30136) esp_rmaker_user_mapping: Received request for node details[0m
+[0;32mI (30136) esp_rmaker_user_mapping: Got user_id = GitHub_Hyw3NNYGJzCYKow89LrW6Z, secret_key = 2a34fdbd-43a6-4d44-83b5-6bc7ef6c6992[0m
+[0;32mI (30146) esp_rmaker_user_mapping: Sending status SUCCESS[0m
+[0;33mW (30496) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (30516) app_wifi: Received Wi-Fi credentials[0m
+	SSID     : esp32
+	Password : 12345678
+[0;32mI (36446) wifi:new:<11,2>, old:<1,0>, ap:<255,255>, sta:<11,2>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (36446) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (36516) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (36596) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (37086) wifi:connected with esp32, aid = 3, channel 11, 40D, bssid = f2:0a:f6:b0:b5:ad[0m
+[0;32mI (37086) wifi:security: WPA2-PSK, phy: bgn, rssi: -46[0m
+[0;32mI (37096) wifi:pm start, type: 1[0m
+
+[0;32mI (37096) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (37096) wifi:set rx beacon pti, rx_bcn_pti: 14, bcn_timeout: 25000, mt_pti: 14, mt_time: 10000[0m
+[0;32mI (37106) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (38196) app_wifi: Connected with IP Address:192.168.137.47[0m
+[0;32mI (38196) esp_netif_handlers: sta ip: 192.168.137.47, mask: 255.255.255.0, gw: 192.168.137.1[0m
+[0;32mI (38196) wifi_prov_mgr: STA Got IP[0m
+[0;32mI (38196) app_wifi: Provisioning successful[0m
+[0;32mI (38206) esp_rmaker_cmd_resp: Enabling Command-Response Module.[0m
+[0;32mI (38206) esp_rmaker_node: Node attribute cmd-resp created[0m
+[0;32mI (38216) esp_mqtt_glue: Connecting to a1p72mufdu6064-ats.iot.us-east-1.amazonaws.com[0m
+[0;32mI (38216) esp_rmaker_core: Waiting for MQTT connection[0m
+[0;32mI (38226) rainmaker: [00] Hello world![0m
+[0;32mI (38836) wifi:<ba-add>idx:0 (ifx:0, f2:0a:f6:b0:b5:ad), tid:0, ssn:4, winSize:64[0m
+[0;32mI (40396) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (42626) esp_mqtt_glue: MQTT Connected[0m
+[0;32mI (42626) esp_rmaker_cmd_resp: Checking for pending commands.[0m
+[0;32mI (42636) esp_rmaker_node_config: Generated Node config of length 1781[0m
+[0;32mI (42646) esp_rmaker_param: Params MQTT Init done.[0m
+[0;32mI (42646) esp_rmaker_param: Reporting params (init): {"Light":{"Name":"Light","Power":true,"Brightness":25,"Hue":180,"Saturation":100},"OTA":{"Status":"","Info":"","URL":""},"Time":{"TZ":"","TZ-POSIX":""},"Schedule":{"Schedules":[]}}[0m
+[0;32mI (42656) esp_rmaker_user_mapping: MQTT Publish: {"node_id":"E806906641FC","user_id":"GitHub_Hyw3NNYGJzCYKow89LrW6Z","secret_key":"2a34fdbd-43a6-4d44-83b5-6bc7ef6c6992"}[0m
+[0;32mI (43226) rainmaker: [01] Hello world![0m
+[0;32mI (44186) NimBLE: GAP procedure initiated: stop advertising.[0m
+
+[0;32mI (44186) NimBLE: GAP procedure initiated: stop advertising.[0m
+
+[0;32mI (44186) NimBLE: GAP procedure initiated: terminate connection; conn_handle=1 hci_reason=19[0m
+
+[1;31mE (44216) protocomm_nimble: Error setting advertisement data; rc = 30[0m
+[0;32mI (44226) wifi_prov_mgr: Provisioning stopped[0m
+[0;32mI (44226) wifi_prov_scheme_ble: BTDM memory released[0m
+[0;32mI (44606) esp_rmaker_user_mapping: User Node association message published successfully.[0m
+[0;32mI (48226) rainmaker: [02] Hello world![0m
+[0;32mI (53176) esp_rmaker_param: Received params: {"Time":{"TZ":"Asia/Ho_Chi_Minh"}}[0m
+[0;32mI (53176) esp_rmaker_param: Found 1 params in write request for Time[0m
+[0;32mI (53176) esp_rmaker_time_service: Received value = Asia/Ho_Chi_Minh for Time - TZ[0m
+[0;32mI (53186) esp_rmaker_time: Time not synchronised yet.[0m
+[0;32mI (53196) esp_rmaker_time: The current time is: Thu Jan  1 07:00:52 1970 +0700[+07], DST: No.[0m
+[0;32mI (53206) esp_rmaker_param: Reporting params: {"Time":{"TZ-POSIX":"<+07>-7"}}[0m
+[0;32mI (53206) esp_rmaker_param: Reporting params: {"Time":{"TZ":"Asia/Ho_Chi_Minh"}}[0m
+[0;32mI (53226) rainmaker: [03] Hello world![0m
+[0;32mI (58226) rainmaker: [04] Hello world![0m
+[0;32mI (63226) rainmaker: [05] Hello world![0m

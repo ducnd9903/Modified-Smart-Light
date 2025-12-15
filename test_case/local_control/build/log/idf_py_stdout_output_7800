@@ -1,0 +1,19 @@
+Command: ninja all
+[1/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/app_main.c.obj
+[2/9] Linking C static library esp-idf\main\libmain.a
+[3/9] Performing build step for 'bootloader'
+[1/1] C:\Windows\system32\cmd.exe /C "cd /D E:\esp\book-esp32c3-iot-projects\test_case\local_control\build\bootloader\esp-idf\esptool_py && e:\esp\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe E:/esp/ESP-IDFcontainer/v5.5.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 E:/esp/book-esp32c3-iot-projects/test_case/local_control/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5210 bytes. 0x2df0 bytes (36%) free.
+[4/9] No install step for 'bootloader'
+[5/9] Completed 'bootloader'
+[6/9] Generating esp-idf/esp_system/ld/sections.ld
+[7/9] Linking CXX executable local_control.elf
+FAILED: local_control.elf 
+C:\Windows\system32\cmd.exe /C "cd . && E:\esp\Espressif\tools\riscv32-esp-elf\esp-14.2.0_20241119\riscv32-esp-elf\bin\riscv32-esp-elf-g++.exe -march=rv32imc_zicsr_zifencei -nostartfiles -march=rv32imc_zicsr_zifencei    -Wl,--cref -Wl,--defsym=IDF_TARGET_ESP32C3=0 -Wl,--Map=E:/esp/book-esp32c3-iot-projects/test_case/local_control/build/local_control.map -Wl,--no-warn-rwx-segments -Wl,--orphan-handling=warn -fno-rtti -fno-lto -Wl,--gc-sections -Wl,--warn-common -T rom.api.ld -T esp32c3.peripherals.ld -T esp32c3.rom.ld -T esp32c3.rom.api.ld -T esp32c3.rom.bt_funcs.ld -T esp32c3.rom.libgcc.ld -T esp32c3.rom.version.ld -T esp32c3.rom.ble_master.ld -T esp32c3.rom.ble_50.ld -T esp32c3.rom.ble_smp.ld -T esp32c3.rom.ble_dtm.ld -T esp32c3.rom.ble_test.ld -T esp32c3.rom.ble_scan.ld -T esp32c3.rom.eco3.ld -T esp32c3.rom.eco3_bt_funcs.ld -T esp32c3.rom.libc.ld -T esp32c3.rom.libc-suboptimal_for_misaligned_mem.ld -T esp32c3.rom.newlib.ld -T memory.ld -T sections.ld @CMakeFiles\local_control.elf.rsp -o local_control.elf && cd ."
+E:/esp/Espressif/tools/riscv32-esp-elf/esp-14.2.0_20241119/riscv32-esp-elf/bin/../lib/gcc/riscv32-esp-elf/14.2.0/../../../../riscv32-esp-elf/bin/ld.exe: esp-idf/main/libmain.a(app_main.c.obj): in function `esp_local_ctrl_service_start':
+E:/esp/book-esp32c3-iot-projects/test_case/local_control/main/app_main.c:200:(.text.esp_local_ctrl_service_start+0x3a): undefined reference to `_binary_servercert_pem_start'
+E:/esp/Espressif/tools/riscv32-esp-elf/esp-14.2.0_20241119/riscv32-esp-elf/bin/../lib/gcc/riscv32-esp-elf/14.2.0/../../../../riscv32-esp-elf/bin/ld.exe: E:/esp/book-esp32c3-iot-projects/test_case/local_control/main/app_main.c:200:(.text.esp_local_ctrl_service_start+0x3e): undefined reference to `_binary_servercert_pem_start'
+E:/esp/Espressif/tools/riscv32-esp-elf/esp-14.2.0_20241119/riscv32-esp-elf/bin/../lib/gcc/riscv32-esp-elf/14.2.0/../../../../riscv32-esp-elf/bin/ld.exe: E:/esp/book-esp32c3-iot-projects/test_case/local_control/main/app_main.c:201:(.text.esp_local_ctrl_service_start+0x44): undefined reference to `_binary_servercert_pem_end'
+E:/esp/Espressif/tools/riscv32-esp-elf/esp-14.2.0_20241119/riscv32-esp-elf/bin/../lib/gcc/riscv32-esp-elf/14.2.0/../../../../riscv32-esp-elf/bin/ld.exe: E:/esp/book-esp32c3-iot-projects/test_case/local_control/main/app_main.c:201:(.text.esp_local_ctrl_service_start+0x48): undefined reference to `_binary_servercert_pem_end'
+collect2.exe: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.

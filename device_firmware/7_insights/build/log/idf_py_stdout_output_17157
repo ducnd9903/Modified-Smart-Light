@@ -1,0 +1,1036 @@
+Command: /home/duc/.espressif/python_env/idf5.5_py3.13_env/bin/python /home/duc/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c3 --revision 3 --decode-panic backtrace /home/duc/esp/Insights/7_insights/build/7_insights.elf /home/duc/esp/Insights/7_insights/build/bootloader/bootloader.elf -m '/home/duc/.espressif/python_env/idf5.5_py3.13_env/bin/python' '/home/duc/esp/esp-idf/tools/idf.py'
+xxx�x���с1: pa�ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xd (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x3fcd5820,len:0x13bc
+load:0x403cbf10,len:0xde8
+load:0x403ce710,len:0x3024
+entry 0x403cbf1a
+[0;32mI (32) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (32) boot: compile time Nov 25 2025 09:13:25[0m
+[0;32mI (32) boot: chip revision: v0.4[0m
+[0;32mI (32) boot: efuse block revision: v1.3[0m
+[0;32mI (36) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (40) boot.esp32c3: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32c3: SPI Mode       : QIO[0m
+[0;32mI (48) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 sec_cert         unknown          3f 06 0000d000 00003000[0m
+[0;32mI (71) boot:  1 nvs              WiFi data        01 02 00010000 00006000[0m
+[0;32mI (78) boot:  2 otadata          OTA data         01 00 00016000 00002000[0m
+[0;32mI (84) boot:  3 phy_init         RF data          01 01 00018000 00001000[0m
+[0;32mI (91) boot:  4 ota_0            OTA app          00 10 00020000 00190000[0m
+[0;32mI (97) boot:  5 ota_1            OTA app          00 11 001b0000 00190000[0m
+[0;32mI (104) boot:  6 fctry            WiFi data        01 02 00340000 00006000[0m
+[0;32mI (110) boot:  7 coredump         Unknown data     01 03 00346000 00010000[0m
+[0;32mI (117) boot: End of partition table[0m
+[0;32mI (120) boot: No factory image, trying OTA 0[0m
+[0;32mI (124) esp_image: segment 0: paddr=00020020 vaddr=3c0f0020 size=44b2ch (281388) map[0m
+[0;32mI (132) esp_image: segment 1: paddr=00064b54 vaddr=3fc98600 size=02bb8h ( 11192) load[0m
+[0;32mI (140) esp_image: segment 2: paddr=00067714 vaddr=40380000 size=08904h ( 35076) load[0m
+[0;32mI (150) esp_image: segment 3: paddr=00070020 vaddr=42000020 size=ea5cch (959948) map[0m
+[0;32mI (154) esp_image: segment 4: paddr=0015a5f4 vaddr=40388904 size=0fbe8h ( 64488) load[0m
+[0;32mI (167) esp_image: segment 5: paddr=0016a1e4 vaddr=5000188c size=00020h (    32) load[0m
+[0;32mI (170) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (210) boot: Set actual ota_seq=1 in otadata[0][0m
+[0;32mI (210) boot: Disabling RNG early entropy source...[0m
+[0;32mI (219) cpu_start: Unicore app[0m
+[0;32mI (227) cpu_start: Pro cpu start user code[0m
+[0;32mI (227) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (227) app_init: Application information:[0m
+[0;32mI (228) app_init: Project name:     7_insights[0m
+[0;32mI (232) app_init: App version:      1[0m
+[0;32mI (235) app_init: Compile time:     Nov 25 2025 09:13:10[0m
+[0;32mI (240) app_init: ELF file SHA256:  7b1ec852a...[0m
+[0;32mI (244) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (248) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (252) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (256) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (260) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (266) heap_init: At 3FCA1EC0 len 0001E140 (120 KiB): RAM[0m
+[0;32mI (271) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (277) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (283) heap_init: At 500018AC len 0000073C (1 KiB): RTCRAM[0m
+[0;32mI (290) spi_flash: detected chip: generic[0m
+[0;32mI (292) spi_flash: flash io: qio[0m
+[0;32mI (296) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (302) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (308) esp_core_dump_flash: Init core dump to flash[0m
+[0;32mI (313) esp_core_dump_flash: Found partition 'coredump' @ 346000 65536 bytes[0m
+[0;32mI (331) coexist: coex firmware version: b0bcc39[0m
+[0;32mI (339) coexist: coexist rom version 9387209[0m
+[0;32mI (339) main_task: Started on CPU0[0m
+[0;32mI (339) main_task: Calling app_main()[0m
+[1;31mE (339) rainmaker_insight: app_main[0m
+[0;32mI (349) rainmaker_insight: NVS Flash initialization[0m
+[0;32mI (350) pm: Frequency switching config: CPU_MAX: 80, APB_MAX: 80, APB_MIN: 10, Light sleep: ENABLED[0m
+[0;32mI (354) rainmaker_insight: Application driver initialization[0m
+[0;32mI (401) pp: pp rom version: 9387209[0m
+[0;32mI (401) net80211: net80211 rom version: 9387209[0m
+[0;32mI (403) wifi:wifi driver task: 3fcab4cc, prio:23, stack:6144, core=0[0m
+[0;32mI (414) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (415) wifi:wifi certification version: v7.0[0m
+[0;32mI (415) wifi:config NVS flash: enabled[0m
+[0;32mI (415) wifi:config nano formatting: enabled[0m
+[0;32mI (419) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (424) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (428) wifi:Init management short buffer num: 32[0m
+[0;32mI (432) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (436) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (440) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (445) wifi:Init static rx buffer num: 10[0m
+[0;32mI (448) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (453) wifi_init: rx ba win: 6[0m
+[0;32mI (455) wifi_init: accept mbox: 6[0m
+[0;32mI (458) wifi_init: tcpip mbox: 32[0m
+[0;32mI (461) wifi_init: udp mbox: 6[0m
+[0;32mI (464) wifi_init: tcp mbox: 6[0m
+[0;32mI (467) wifi_init: tcp tx win: 5760[0m
+[0;32mI (470) wifi_init: tcp rx win: 5760[0m
+[0;32mI (473) wifi_init: tcp mss: 1440[0m
+[0;32mI (476) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (480) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (491) esp_rmaker_work_queue: Work Queue created.[0m
+[0;32mI (498) esp_mqtt_glue: AWS PPI: ?Platform=APN3|A0|RM|EX00|RMDev|1x0|E806906641FC[0m
+[0;32mI (499) esp_mqtt_glue: Initialising MQTT[0m
+[0;32mI (499) esp_rmaker_mqtt_budget: MQTT Budgeting initialised. Default: 100, Max: 1024, Revive count: 1, Revive period: 5[0m
+[0;32mI (509) esp_rmaker_node: Node ID ----- E806906641FC[0m
+[0;32mI (515) esp_rmaker_ota_using_params: OTA enabled with Params[0m
+[0;32mI (520) esp_rmaker_ota: OTA state = 2[0m
+[0;32mI (522) esp_rmaker_time: Initializing SNTP. Using the SNTP server: pool.ntp.org[0m
+[0;32mI (533) esp_rmaker_time_service: Time service enabled[0m
+[0;32mI (534) esp_rmaker_time: SNTP already initialized.[0m
+[0;33mW (540) app_insights: Event loop creation failed with ESP_ERR_INVALID_STATE. Proceeding since it must have been created elsewhere.[0m
+[0;33mW (550) app_insights: Nodes with Self Claiming may not be accessible for Insights.[0m
+[0;32mI (561) heap_metrics: free:0x28320 lfb:0x1c000 min_free_ever:0x2831c[0m
+[0;32mI (565) esp_insights: =========================================[0m
+[0;32mI (569) esp_insights: Insights enabled for Node ID E806906641FC[0m
+[0;32mI (575) esp_insights: =========================================[0m
+[0;32mI (581) insights_cmd_resp: Enabling Command-Response Module.[0m
+[0;32mI (586) esp_rmaker_common_cmd_resp: Registered command 257[0m
+[0;32mI (591) rainmaker_insight: Light metrics initialized[0m
+[0;32mI (596) esp_rmaker_core: Starting RainMaker Work Queue task[0m
+[0;32mI (601) esp_rmaker_work_queue: RainMaker Work Queue task started.[0m
+[0;32mI (608) network_prov_scheme_ble: BT memory released[0m
+[0;32mI (612) app_wifi: Already provisioned, starting Wi-Fi STA[0m
+[0;32mI (617) network_prov_scheme_ble: BTDM memory released[0m
+[0;32mI (622) app_wifi: WiFi STA configured: listen_interval=3 (enables light sleep)[0m
+[0;32mI (629) phy_init: phy_version 1201,bae5dd99,Mar  3 2025,15:36:21[0m
+[0;32mI (670) wifi:mode : sta (e8:06:90:66:41:fc)[0m
+[0;32mI (670) wifi:enable tsf[0m
+[0;32mI (671) app_wifi: Wi-Fi started, connecting...[0m
+[0;32mI (3084) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3085) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (3095) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (3167) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (3189) wifi:connected with Duc, aid = 3, channel 11, BW20, bssid = 42:dc:46:81:46:a8[0m
+[0;32mI (3190) wifi:security: WPA2-PSK, phy: bgn, rssi: -36[0m
+[0;32mI (3192) wifi:pm start, type: 1[0m
+
+[0;32mI (3194) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (3202) wifi:set rx beacon pti, rx_bcn_pti: 14, bcn_timeout: 25000, mt_pti: 14, mt_time: 10000[0m
+[0;32mI (3224) wifi:<ba-add>idx:0 (ifx:0, 42:dc:46:81:46:a8), tid:1, ssn:0, winSize:64[0m
+[0;32mI (3225) wifi:<ba-add>idx:1 (ifx:0, 42:dc:46:81:46:a8), tid:0, ssn:0, winSize:64[0m
+[0;32mI (3249) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (3250) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (4243) app_wifi: Connected! Got IP: 10.198.227.33[0m
+-1
+
+FreeRTOS: FreeRTOS Task "crashTask" should not return, Aborting now!
+Core  0 register dump:
+MEPC    : 0x4038b880  RA      : 0x4038c5e4  SP      : 0x3fca1660  GP      : 0x3fc98e00  
+TP      : 0x3fca1690  T0      : 0x00000000  T1      : 0x00000000  T2      : 0x00000000  
+S0/FP   : 0x3fc9a000  S1      : 0x00000000  A0      : 0x3fc99e74  A1      : 0x3c0f1427  
+A2      : 0x00000000  A3      : 0x3fc99e97  A4      : 0x00000001  A5      : 0x3fca0000  
+A6      : 0x3c111618  A7      : 0x0000000a  S2      : 0x00000000  S3      : 0x00000000  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x00000000  T4      : 0x00000000  T5      : 0x00000000  T6      : 0x00000000  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000002  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+add symbol table from file "/home/duc/esp/Insights/7_insights/build/bootloader/bootloader.elf"
+panic_abort (details=details@entry=0x3fc99e74 <msg> "") at /home/duc/esp/esp-idf/components/esp_system/panic.c:483
+483	    asm("unimp");   // should be an invalid operation on RISC-V targets
+#0  panic_abort (details=details@entry=0x3fc99e74 <msg> "") at /home/duc/esp/esp-idf/components/esp_system/panic.c:483
+#1  0x4038c5e4 in vPortTaskWrapper (pxCode=<optimized out>, pvParameters=<optimized out>) at /home/duc/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:260
+
+
+
+ELF file SHA256: 7b1ec852a
+
+[0;32mI (1699) esp_core_dump_flash: Save core dump to flash...[0m
+[0;32mI (1705) esp_core_dump_flash: Erase flash 12288 bytes @ 0x346000[0m
+[0;32mI (1860) esp_core_dump_flash: Write end offset 0x2224, check sum length 4[0m
+[0;32mI (1861) esp_core_dump_flash: Core dump has been saved to flash.[0m
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4038b970
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x3fcd5820,len:0x13bc
+load:0x403cbf10,len:0xde8
+load:0x403ce710,len:0x3024
+entry 0x403cbf1a
+[0;32mI (35) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (35) boot: compile time Nov 25 2025 09:13:25[0m
+[0;32mI (35) boot: chip revision: v0.4[0m
+[0;32mI (35) boot: efuse block revision: v1.3[0m
+[0;32mI (39) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (43) boot.esp32c3: SPI Speed      : 40MHz[0m
+[0;32mI (47) boot.esp32c3: SPI Mode       : QIO[0m
+[0;32mI (51) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (68) boot:  0 sec_cert         unknown          3f 06 0000d000 00003000[0m
+[0;32mI (74) boot:  1 nvs              WiFi data        01 02 00010000 00006000[0m
+[0;32mI (81) boot:  2 otadata          OTA data         01 00 00016000 00002000[0m
+[0;32mI (87) boot:  3 phy_init         RF data          01 01 00018000 00001000[0m
+[0;32mI (94) boot:  4 ota_0            OTA app          00 10 00020000 00190000[0m
+[0;32mI (100) boot:  5 ota_1            OTA app          00 11 001b0000 00190000[0m
+[0;32mI (107) boot:  6 fctry            WiFi data        01 02 00340000 00006000[0m
+[0;32mI (114) boot:  7 coredump         Unknown data     01 03 00346000 00010000[0m
+[0;32mI (120) boot: End of partition table[0m
+[0;32mI (124) esp_image: segment 0: paddr=00020020 vaddr=3c0f0020 size=44b2ch (281388) map[0m
+[0;32mI (178) esp_image: segment 1: paddr=00064b54 vaddr=3fc98600 size=02bb8h ( 11192) load[0m
+[0;32mI (180) esp_image: segment 2: paddr=00067714 vaddr=40380000 size=08904h ( 35076) load[0m
+[0;32mI (188) esp_image: segment 3: paddr=00070020 vaddr=42000020 size=ea5cch (959948) map[0m
+[0;32mI (348) esp_image: segment 4: paddr=0015a5f4 vaddr=40388904 size=0fbe8h ( 64488) load[0m
+[0;32mI (361) esp_image: segment 5: paddr=0016a1e4 vaddr=5000188c size=00020h (    32) load[0m
+[0;32mI (369) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (369) boot: Disabling RNG early entropy source...[0m
+[0;32mI (379) cpu_start: Unicore app[0m
+[0;32mI (387) cpu_start: Pro cpu start user code[0m
+[0;32mI (387) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (387) app_init: Application information:[0m
+[0;32mI (387) app_init: Project name:     7_insights[0m
+[0;32mI (391) app_init: App version:      1[0m
+[0;32mI (395) app_init: Compile time:     Nov 25 2025 09:13:10[0m
+[0;32mI (400) app_init: ELF file SHA256:  7b1ec852a...[0m
+[0;32mI (404) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (408) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (412) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (416) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (419) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (426) heap_init: At 3FCA1EC0 len 0001E140 (120 KiB): RAM[0m
+[0;32mI (431) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (437) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (443) heap_init: At 500018AC len 0000073C (1 KiB): RTCRAM[0m
+[0;32mI (449) spi_flash: detected chip: generic[0m
+[0;32mI (452) spi_flash: flash io: qio[0m
+[0;32mI (455) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (461) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (468) esp_core_dump_flash: Init core dump to flash[0m
+[0;32mI (473) esp_core_dump_flash: Found partition 'coredump' @ 346000 65536 bytes[0m
+[0;32mI (485) esp_core_dump_flash: Core dump data checksum is correct[0m
+[0;32mI (485) esp_core_dump_flash: Found core dump 8740 bytes in flash @ 0x346000[0m
+[0;32mI (503) coexist: coex firmware version: b0bcc39[0m
+[0;32mI (503) coexist: coexist rom version 9387209[0m
+[0;32mI (504) main_task: Started on CPU0[0m
+[0;32mI (504) main_task: Calling app_main()[0m
+[1;31mE (506) rainmaker_insight: app_main[0m
+[0;32mI (518) rainmaker_insight: NVS Flash initialization[0m
+[0;32mI (519) pm: Frequency switching config: CPU_MAX: 80, APB_MAX: 80, APB_MIN: 10, Light sleep: ENABLED[0m
+[0;32mI (523) rainmaker_insight: Application driver initialization[0m
+[0;32mI (570) pp: pp rom version: 9387209[0m
+[0;32mI (570) net80211: net80211 rom version: 9387209[0m
+[0;32mI (572) wifi:wifi driver task: 3fcab4cc, prio:23, stack:6144, core=0[0m
+[0;32mI (583) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (584) wifi:wifi certification version: v7.0[0m
+[0;32mI (584) wifi:config NVS flash: enabled[0m
+[0;32mI (584) wifi:config nano formatting: enabled[0m
+[0;32mI (588) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (593) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (597) wifi:Init management short buffer num: 32[0m
+[0;32mI (601) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (605) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (609) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (614) wifi:Init static rx buffer num: 10[0m
+[0;32mI (617) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (623) wifi_init: rx ba win: 6[0m
+[0;32mI (624) wifi_init: accept mbox: 6[0m
+[0;32mI (627) wifi_init: tcpip mbox: 32[0m
+[0;32mI (630) wifi_init: udp mbox: 6[0m
+[0;32mI (633) wifi_init: tcp mbox: 6[0m
+[0;32mI (636) wifi_init: tcp tx win: 5760[0m
+[0;32mI (639) wifi_init: tcp rx win: 5760[0m
+[0;32mI (642) wifi_init: tcp mss: 1440[0m
+[0;32mI (645) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (649) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (660) esp_rmaker_work_queue: Work Queue created.[0m
+[0;32mI (667) esp_mqtt_glue: AWS PPI: ?Platform=APN3|A0|RM|EX00|RMDev|1x0|E806906641FC[0m
+[0;32mI (668) esp_mqtt_glue: Initialising MQTT[0m
+[0;32mI (668) esp_rmaker_mqtt_budget: MQTT Budgeting initialised. Default: 100, Max: 1024, Revive count: 1, Revive period: 5[0m
+[0;32mI (678) esp_rmaker_node: Node ID ----- E806906641FC[0m
+[0;32mI (684) esp_rmaker_ota_using_params: OTA enabled with Params[0m
+[0;32mI (689) esp_rmaker_ota: OTA state = 2[0m
+[0;32mI (691) esp_rmaker_time: Initializing SNTP. Using the SNTP server: pool.ntp.org[0m
+[0;32mI (702) esp_rmaker_time_service: Time service enabled[0m
+[0;32mI (703) esp_rmaker_time: SNTP already initialized.[0m
+[0;33mW (709) app_insights: Event loop creation failed with ESP_ERR_INVALID_STATE. Proceeding since it must have been created elsewhere.[0m
+[0;33mW (719) app_insights: Nodes with Self Claiming may not be accessible for Insights.[0m
+[0;32mI (730) heap_metrics: free:0x28320 lfb:0x1c000 min_free_ever:0x2831c[0m
+[0;32mI (734) esp_insights: =========================================[0m
+[0;32mI (738) esp_insights: Insights enabled for Node ID E806906641FC[0m
+[0;32mI (744) esp_insights: =========================================[0m
+[0;32mI (750) insights_cmd_resp: Enabling Command-Response Module.[0m
+[0;32mI (755) esp_rmaker_common_cmd_resp: Registered command 257[0m
+[0;32mI (760) rainmaker_insight: Light metrics initialized[0m
+[0;32mI (765) esp_rmaker_core: Starting RainMaker Work Queue task[0m
+[0;32mI (770) esp_rmaker_work_queue: RainMaker Work Queue task started.[0m
+[0;32mI (777) network_prov_scheme_ble: BT memory released[0m
+[0;32mI (781) app_wifi: Already provisioned, starting Wi-Fi STA[0m
+[0;32mI (786) network_prov_scheme_ble: BTDM memory released[0m
+[0;32mI (791) app_wifi: WiFi STA configured: listen_interval=3 (enables light sleep)[0m
+[0;32mI (798) phy_init: phy_version 1201,bae5dd99,Mar  3 2025,15:36:21[0m
+[0;32mI (838) wifi:mode : sta (e8:06:90:66:41:fc)[0m
+[0;32mI (839) wifi:enable tsf[0m
+[0;32mI (840) app_wifi: Wi-Fi started, connecting...[0m
+[0;32mI (3253) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3254) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (3265) wifi:state: auth -> init (0x1c0)[0m
+[0;32mI (3268) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (3269) app_wifi: Disconnected from Wi-Fi. Reconnecting...[0m
+[0;33mW (5684) app_wifi: Disconnected from Wi-Fi. Reconnecting...[0m
+[0;32mI (8097) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (8098) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (8110) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (8181) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (8208) wifi:connected with Duc, aid = 4, channel 11, BW20, bssid = 42:dc:46:81:46:a8[0m
+[0;32mI (8209) wifi:security: WPA2-PSK, phy: bgn, rssi: -37[0m
+[0;32mI (8212) wifi:pm start, type: 1[0m
+
+[0;32mI (8213) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (8221) wifi:set rx beacon pti, rx_bcn_pti: 14, bcn_timeout: 25000, mt_pti: 14, mt_time: 10000[0m
+[0;32mI (8240) wifi:<ba-add>idx:0 (ifx:0, 42:dc:46:81:46:a8), tid:0, ssn:0, winSize:64[0m
+[0;32mI (8263) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (8264) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (9261) app_wifi: Connected! Got IP: 10.198.227.33[0m
+-1
+
+FreeRTOS: FreeRTOS Task "crashTask" should not return, Aborting now!
+Core  0 register dump:
+MEPC    : 0x4038b880  RA      : 0x4038c5e4  SP      : 0x3fca1660  GP      : 0x3fc98e00  
+TP      : 0x3fca1690  T0      : 0x00000000  T1      : 0x00000000  T2      : 0x00000000  
+S0/FP   : 0x3fc9a000  S1      : 0x00000000  A0      : 0x3fc99e74  A1      : 0x3c0f1427  
+A2      : 0x00000000  A3      : 0x3fc99e97  A4      : 0x00000001  A5      : 0x3fca0000  
+A6      : 0x3c111618  A7      : 0x0000000a  S2      : 0x00000000  S3      : 0x00000000  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x00000000  T4      : 0x00000000  T5      : 0x00000000  T6      : 0x00000000  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000002  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+add symbol table from file "/home/duc/esp/Insights/7_insights/build/bootloader/bootloader.elf"
+panic_abort (details=details@entry=0x3fc99e74 <msg> "") at /home/duc/esp/esp-idf/components/esp_system/panic.c:483
+483	    asm("unimp");   // should be an invalid operation on RISC-V targets
+#0  panic_abort (details=details@entry=0x3fc99e74 <msg> "") at /home/duc/esp/esp-idf/components/esp_system/panic.c:483
+#1  0x4038c5e4 in vPortTaskWrapper (pxCode=<optimized out>, pvParameters=<optimized out>) at /home/duc/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:260
+
+
+
+ELF file SHA256: 7b1ec852a
+
+[0;32mI (2348) esp_core_dump_flash: Save core dump to flash...[0m
+[0;32mI (2353) esp_core_dump_flash: Erase flash 12288 bytes @ 0x346000[0m
+[0;32mI (2507) esp_core_dump_flash: Write end offset 0x2224, check sum length 4[0m
+[0;32mI (2507) esp_core_dump_flash: Core dump has been saved to flash.[0m
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4038b970
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x3fcd5820,len:0x13bc
+load:0x403cbf10,len:0xde8
+load:0x403ce710,len:0x3024
+entry 0x403cbf1a
+[0;32mI (35) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (35) boot: compile time Nov 25 2025 09:13:25[0m
+[0;32mI (35) boot: chip revision: v0.4[0m
+[0;32mI (35) boot: efuse block revision: v1.3[0m
+[0;32mI (39) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (43) boot.esp32c3: SPI Speed      : 40MHz[0m
+[0;32mI (47) boot.esp32c3: SPI Mode       : QIO[0m
+[0;32mI (51) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (68) boot:  0 sec_cert         unknown          3f 06 0000d000 00003000[0m
+[0;32mI (74) boot:  1 nvs              WiFi data        01 02 00010000 00006000[0m
+[0;32mI (81) boot:  2 otadata          OTA data         01 00 00016000 00002000[0m
+[0;32mI (87) boot:  3 phy_init         RF data          01 01 00018000 00001000[0m
+[0;32mI (94) boot:  4 ota_0            OTA app          00 10 00020000 00190000[0m
+[0;32mI (100) boot:  5 ota_1            OTA app          00 11 001b0000 00190000[0m
+[0;32mI (107) boot:  6 fctry            WiFi data        01 02 00340000 00006000[0m
+[0;32mI (114) boot:  7 coredump         Unknown data     01 03 00346000 00010000[0m
+[0;32mI (120) boot: End of partition table[0m
+[0;32mI (124) esp_image: segment 0: paddr=00020020 vaddr=3c0f0020 size=44b2ch (281388) map[0m
+[0;32mI (178) esp_image: segment 1: paddr=00064b54 vaddr=3fc98600 size=02bb8h ( 11192) load[0m
+[0;32mI (180) esp_image: segment 2: paddr=00067714 vaddr=40380000 size=08904h ( 35076) load[0m
+[0;32mI (188) esp_image: segment 3: paddr=00070020 vaddr=42000020 size=ea5cch (959948) map[0m
+[0;32mI (348) esp_image: segment 4: paddr=0015a5f4 vaddr=40388904 size=0fbe8h ( 64488) load[0m
+[0;32mI (361) esp_image: segment 5: paddr=0016a1e4 vaddr=5000188c size=00020h (    32) load[0m
+[0;32mI (369) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (369) boot: Disabling RNG early entropy source...[0m
+[0;32mI (379) cpu_start: Unicore app[0m
+[0;32mI (387) cpu_start: Pro cpu start user code[0m
+[0;32mI (387) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (387) app_init: Application information:[0m
+[0;32mI (387) app_init: Project name:     7_insights[0m
+[0;32mI (391) app_init: App version:      1[0m
+[0;32mI (395) app_init: Compile time:     Nov 25 2025 09:13:10[0m
+[0;32mI (400) app_init: ELF file SHA256:  7b1ec852a...[0m
+[0;32mI (404) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (408) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (412) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (416) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (419) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (426) heap_init: At 3FCA1EC0 len 0001E140 (120 KiB): RAM[0m
+[0;32mI (431) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (437) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (443) heap_init: At 500018AC len 0000073C (1 KiB): RTCRAM[0m
+[0;32mI (449) spi_flash: detected chip: generic[0m
+[0;32mI (452) spi_flash: flash io: qio[0m
+[0;32mI (455) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (461) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (468) esp_core_dump_flash: Init core dump to flash[0m
+[0;32mI (473) esp_core_dump_flash: Found partition 'coredump' @ 346000 65536 bytes[0m
+[0;32mI (485) esp_core_dump_flash: Core dump data checksum is correct[0m
+[0;32mI (485) esp_core_dump_flash: Found core dump 8740 bytes in flash @ 0x346000[0m
+[0;32mI (503) coexist: coex firmware version: b0bcc39[0m
+[0;32mI (503) coexist: coexist rom version 9387209[0m
+[0;32mI (504) main_task: Started on CPU0[0m
+[0;32mI (504) main_task: Calling app_main()[0m
+[1;31mE (506) rainmaker_insight: app_main[0m
+[0;32mI (519) rainmaker_insight: NVS Flash initialization[0m
+[0;32mI (519) pm: Frequency switching config: CPU_MAX: 80, APB_MAX: 80, APB_MIN: 10, Light sleep: ENABLED[0m
+[0;32mI (523) rainmaker_insight: Application driver initialization[0m
+[0;32mI (570) pp: pp rom version: 9387209[0m
+[0;32mI (570) net80211: net80211 rom version: 9387209[0m
+[0;32mI (572) wifi:wifi driver task: 3fcab4cc, prio:23, stack:6144, core=0[0m
+[0;32mI (583) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (584) wifi:wifi certification version: v7.0[0m
+[0;32mI (584) wifi:config NVS flash: enabled[0m
+[0;32mI (584) wifi:config nano formatting: enabled[0m
+[0;32mI (588) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (593) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (597) wifi:Init management short buffer num: 32[0m
+[0;32mI (601) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (605) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (609) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (614) wifi:Init static rx buffer num: 10[0m
+[0;32mI (617) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (623) wifi_init: rx ba win: 6[0m
+[0;32mI (624) wifi_init: accept mbox: 6[0m
+[0;32mI (627) wifi_init: tcpip mbox: 32[0m
+[0;32mI (630) wifi_init: udp mbox: 6[0m
+[0;32mI (633) wifi_init: tcp mbox: 6[0m
+[0;32mI (636) wifi_init: tcp tx win: 5760[0m
+[0;32mI (639) wifi_init: tcp rx win: 5760[0m
+[0;32mI (642) wifi_init: tcp mss: 1440[0m
+[0;32mI (645) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (649) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (660) esp_rmaker_work_queue: Work Queue created.[0m
+[0;32mI (667) esp_mqtt_glue: AWS PPI: ?Platform=APN3|A0|RM|EX00|RMDev|1x0|E806906641FC[0m
+[0;32mI (668) esp_mqtt_glue: Initialising MQTT[0m
+[0;32mI (668) esp_rmaker_mqtt_budget: MQTT Budgeting initialised. Default: 100, Max: 1024, Revive count: 1, Revive period: 5[0m
+[0;32mI (678) esp_rmaker_node: Node ID ----- E806906641FC[0m
+[0;32mI (684) esp_rmaker_ota_using_params: OTA enabled with Params[0m
+[0;32mI (689) esp_rmaker_ota: OTA state = 2[0m
+[0;32mI (691) esp_rmaker_time: Initializing SNTP. Using the SNTP server: pool.ntp.org[0m
+[0;32mI (702) esp_rmaker_time_service: Time service enabled[0m
+[0;32mI (703) esp_rmaker_time: SNTP already initialized.[0m
+[0;33mW (709) app_insights: Event loop creation failed with ESP_ERR_INVALID_STATE. Proceeding since it must have been created elsewhere.[0m
+[0;33mW (719) app_insights: Nodes with Self Claiming may not be accessible for Insights.[0m
+[0;32mI (730) heap_metrics: free:0x28320 lfb:0x1c000 min_free_ever:0x2831c[0m
+[0;32mI (734) esp_insights: =========================================[0m
+[0;32mI (738) esp_insights: Insights enabled for Node ID E806906641FC[0m
+[0;32mI (744) esp_insights: =========================================[0m
+[0;32mI (750) insights_cmd_resp: Enabling Command-Response Module.[0m
+[0;32mI (755) esp_rmaker_common_cmd_resp: Registered command 257[0m
+[0;32mI (760) rainmaker_insight: Light metrics initialized[0m
+[0;32mI (765) esp_rmaker_core: Starting RainMaker Work Queue task[0m
+[0;32mI (770) esp_rmaker_work_queue: RainMaker Work Queue task started.[0m
+[0;32mI (777) network_prov_scheme_ble: BT memory released[0m
+[0;32mI (781) app_wifi: Already provisioned, starting Wi-Fi STA[0m
+[0;32mI (786) network_prov_scheme_ble: BTDM memory released[0m
+[0;32mI (791) app_wifi: WiFi STA configured: listen_interval=3 (enables light sleep)[0m
+[0;32mI (798) phy_init: phy_version 1201,bae5dd99,Mar  3 2025,15:36:21[0m
+[0;32mI (838) wifi:mode : sta (e8:06:90:66:41:fc)[0m
+[0;32mI (839) wifi:enable tsf[0m
+[0;32mI (840) app_wifi: Wi-Fi started, connecting...[0m
+[0;32mI (3253) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3254) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (3267) wifi:state: auth -> init (0x1c0)[0m
+[0;32mI (3271) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (3272) app_wifi: Disconnected from Wi-Fi. Reconnecting...[0m
+[0;33mW (5686) app_wifi: Disconnected from Wi-Fi. Reconnecting...[0m
+[0;32mI (8098) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (8099) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (8108) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (8173) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (8197) wifi:connected with Duc, aid = 5, channel 11, BW20, bssid = 42:dc:46:81:46:a8[0m
+[0;32mI (8197) wifi:security: WPA2-PSK, phy: bgn, rssi: -44[0m
+[0;32mI (8200) wifi:pm start, type: 1[0m
+
+[0;32mI (8202) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (8210) wifi:set rx beacon pti, rx_bcn_pti: 14, bcn_timeout: 25000, mt_pti: 14, mt_time: 10000[0m
+[0;32mI (8221) esp_insights: ESP_DIAG_DATA_STORE_EVENT_NON_CRITICAL_DATA_LOW_MEM[0m
+[0;32mI (8225) esp_insights: ESP_DIAG_DATA_STORE_EVENT_NON_CRITICAL_DATA_LOW_MEM[0m
+[0;32mI (8230) wifi:<ba-add>idx:0 (ifx:0, 42:dc:46:81:46:a8), tid:0, ssn:0, winSize:64[0m
+[0;32mI (8239) esp_insights: ESP_DIAG_DATA_STORE_EVENT_NON_CRITICAL_DATA_LOW_MEM[0m
+[0;32mI (8245) esp_insights: ESP_DIAG_DATA_STORE_EVENT_NON_CRITICAL_DATA_LOW_MEM[0m
+[0;32mI (8257) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (8259) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (9268) app_wifi: Connected! Got IP: 10.198.227.33[0m
+-1
+
+FreeRTOS: FreeRTOS Task "crashTask" should not return, Aborting now!
+Core  0 register dump:
+MEPC    : 0x4038b880  RA      : 0x4038c5e4  SP      : 0x3fca1660  GP      : 0x3fc98e00  
+TP      : 0x3fca1690  T0      : 0x00000000  T1      : 0x00000000  T2      : 0x00000000  
+S0/FP   : 0x3fc9a000  S1      : 0x00000000  A0      : 0x3fc99e74  A1      : 0x3c0f1427  
+A2      : 0x00000000  A3      : 0x3fc99e97  A4      : 0x00000001  A5      : 0x3fca0000  
+A6      : 0x3c111618  A7      : 0x0000000a  S2      : 0x00000000  S3      : 0x00000000  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x00000000  T4      : 0x00000000  T5      : 0x00000000  T6      : 0x00000000  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000002  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+add symbol table from file "/home/duc/esp/Insights/7_insights/build/bootloader/bootloader.elf"
+panic_abort (details=details@entry=0x3fc99e74 <msg> "") at /home/duc/esp/esp-idf/components/esp_system/panic.c:483
+483	    asm("unimp");   // should be an invalid operation on RISC-V targets
+#0  panic_abort (details=details@entry=0x3fc99e74 <msg> "") at /home/duc/esp/esp-idf/components/esp_system/panic.c:483
+#1  0x4038c5e4 in vPortTaskWrapper (pxCode=<optimized out>, pvParameters=<optimized out>) at /home/duc/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:260
+
+
+
+ELF file SHA256: 7b1ec852a
+
+[0;32mI (2379) esp_core_dump_flash: Save core dump to flash...[0m
+[0;32mI (2384) esp_core_dump_flash: Erase flash 12288 bytes @ 0x346000[0m
+[0;32mI (2538) esp_core_dump_flash: Write end offset 0x2224, check sum length 4[0m
+[0;32mI (2538) esp_core_dump_flash: Core dump has been saved to flash.[0m
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4038b970
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x3fcd5820,len:0x13bc
+load:0x403cbf10,len:0xde8
+load:0x403ce710,len:0x3024
+entry 0x403cbf1a
+[0;32mI (35) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (35) boot: compile time Nov 25 2025 09:13:25[0m
+[0;32mI (35) boot: chip revision: v0.4[0m
+[0;32mI (35) boot: efuse block revision: v1.3[0m
+[0;32mI (39) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (43) boot.esp32c3: SPI Speed      : 40MHz[0m
+[0;32mI (47) boot.esp32c3: SPI Mode       : QIO[0m
+[0;32mI (51) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (68) boot:  0 sec_cert         unknown          3f 06 0000d000 00003000[0m
+[0;32mI (74) boot:  1 nvs              WiFi data        01 02 00010000 00006000[0m
+[0;32mI (81) boot:  2 otadata          OTA data         01 00 00016000 00002000[0m
+[0;32mI (87) boot:  3 phy_init         RF data          01 01 00018000 00001000[0m
+[0;32mI (94) boot:  4 ota_0            OTA app          00 10 00020000 00190000[0m
+[0;32mI (100) boot:  5 ota_1            OTA app          00 11 001b0000 00190000[0m
+[0;32mI (107) boot:  6 fctry            WiFi data        01 02 00340000 00006000[0m
+[0;32mI (114) boot:  7 coredump         Unknown data     01 03 00346000 00010000[0m
+[0;32mI (120) boot: End of partition table[0m
+[0;32mI (124) esp_image: segment 0: paddr=00020020 vaddr=3c0f0020 size=44b2ch (281388) map[0m
+[0;32mI (178) esp_image: segment 1: paddr=00064b54 vaddr=3fc98600 size=02bb8h ( 11192) load[0m
+[0;32mI (180) esp_image: segment 2: paddr=00067714 vaddr=40380000 size=08904h ( 35076) load[0m
+[0;32mI (188) esp_image: segment 3: paddr=00070020 vaddr=42000020 size=ea5cch (959948) map[0m
+[0;32mI (348) esp_image: segment 4: paddr=0015a5f4 vaddr=40388904 size=0fbe8h ( 64488) load[0m
+[0;32mI (361) esp_image: segment 5: paddr=0016a1e4 vaddr=5000188c size=00020h (    32) load[0m
+[0;32mI (369) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (369) boot: Disabling RNG early entropy source...[0m
+[0;32mI (379) cpu_start: Unicore app[0m
+[0;32mI (387) cpu_start: Pro cpu start user code[0m
+[0;32mI (387) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (387) app_init: Application information:[0m
+[0;32mI (387) app_init: Project name:     7_insights[0m
+[0;32mI (391) app_init: App version:      1[0m
+[0;32mI (395) app_init: Compile time:     Nov 25 2025 09:13:10[0m
+[0;32mI (400) app_init: ELF file SHA256:  7b1ec852a...[0m
+[0;32mI (404) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (408) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (412) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (416) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (419) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (426) heap_init: At 3FCA1EC0 len 0001E140 (120 KiB): RAM[0m
+[0;32mI (431) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (437) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (443) heap_init: At 500018AC len 0000073C (1 KiB): RTCRAM[0m
+[0;32mI (449) spi_flash: detected chip: generic[0m
+[0;32mI (452) spi_flash: flash io: qio[0m
+[0;32mI (455) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (461) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (468) esp_core_dump_flash: Init core dump to flash[0m
+[0;32mI (473) esp_core_dump_flash: Found partition 'coredump' @ 346000 65536 bytes[0m
+[0;32mI (485) esp_core_dump_flash: Core dump data checksum is correct[0m
+[0;32mI (485) esp_core_dump_flash: Found core dump 8740 bytes in flash @ 0x346000[0m
+[0;32mI (503) coexist: coex firmware version: b0bcc39[0m
+[0;32mI (503) coexist: coexist rom version 9387209[0m
+[0;32mI (504) main_task: Started on CPU0[0m
+[0;32mI (504) main_task: Calling app_main()[0m
+[1;31mE (506) rainmaker_insight: app_main[0m
+[0;32mI (519) rainmaker_insight: NVS Flash initialization[0m
+[0;32mI (519) pm: Frequency switching config: CPU_MAX: 80, APB_MAX: 80, APB_MIN: 10, Light sleep: ENABLED[0m
+[0;32mI (523) rainmaker_insight: Application driver initialization[0m
+[0;32mI (570) pp: pp rom version: 9387209[0m
+[0;32mI (570) net80211: net80211 rom version: 9387209[0m
+[0;32mI (572) wifi:wifi driver task: 3fcab4cc, prio:23, stack:6144, core=0[0m
+[0;32mI (583) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (584) wifi:wifi certification version: v7.0[0m
+[0;32mI (584) wifi:config NVS flash: enabled[0m
+[0;32mI (584) wifi:config nano formatting: enabled[0m
+[0;32mI (588) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (593) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (597) wifi:Init management short buffer num: 32[0m
+[0;32mI (601) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (605) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (609) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (614) wifi:Init static rx buffer num: 10[0m
+[0;32mI (617) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (623) wifi_init: rx ba win: 6[0m
+[0;32mI (624) wifi_init: accept mbox: 6[0m
+[0;32mI (627) wifi_init: tcpip mbox: 32[0m
+[0;32mI (630) wifi_init: udp mbox: 6[0m
+[0;32mI (633) wifi_init: tcp mbox: 6[0m
+[0;32mI (636) wifi_init: tcp tx win: 5760[0m
+[0;32mI (639) wifi_init: tcp rx win: 5760[0m
+[0;32mI (642) wifi_init: tcp mss: 1440[0m
+[0;32mI (645) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (649) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (660) esp_rmaker_work_queue: Work Queue created.[0m
+[0;32mI (667) esp_mqtt_glue: AWS PPI: ?Platform=APN3|A0|RM|EX00|RMDev|1x0|E806906641FC[0m
+[0;32mI (668) esp_mqtt_glue: Initialising MQTT[0m
+[0;32mI (668) esp_rmaker_mqtt_budget: MQTT Budgeting initialised. Default: 100, Max: 1024, Revive count: 1, Revive period: 5[0m
+[0;32mI (678) esp_rmaker_node: Node ID ----- E806906641FC[0m
+[0;32mI (684) esp_rmaker_ota_using_params: OTA enabled with Params[0m
+[0;32mI (689) esp_rmaker_ota: OTA state = 2[0m
+[0;32mI (691) esp_rmaker_time: Initializing SNTP. Using the SNTP server: pool.ntp.org[0m
+[0;32mI (702) esp_rmaker_time_service: Time service enabled[0m
+[0;32mI (703) esp_rmaker_time: SNTP already initialized.[0m
+[0;33mW (709) app_insights: Event loop creation failed with ESP_ERR_INVALID_STATE. Proceeding since it must have been created elsewhere.[0m
+[0;33mW (719) app_insights: Nodes with Self Claiming may not be accessible for Insights.[0m
+[0;32mI (730) esp_insights: ESP_DIAG_DATA_STORE_EVENT_NON_CRITICAL_DATA_LOW_MEM[0m
+[0;32mI (734) esp_insights: ESP_DIAG_DATA_STORE_EVENT_NON_CRITICAL_DATA_LOW_MEM[0m
+[0;32mI (740) esp_insights: esp_diag_data_store_non_critical_write failed group heap, len 40, err 0x0101[0m
+[0;33mW (748) heap_metrics: Failed to add heap metric key:lfb[0m
+[0;32mI (754) esp_insights: ESP_DIAG_DATA_STORE_EVENT_NON_CRITICAL_DATA_LOW_MEM[0m
+[0;32mI (760) esp_insights: esp_diag_data_store_non_critical_write failed group wifi, len 40, err 0x0101[0m
+[0;32mI (769) esp_insights: ESP_DIAG_DATA_STORE_EVENT_NON_CRITICAL_DATA_LOW_MEM[0m
+[0;32mI (775) esp_insights: =========================================[0m
+[0;32mI (781) esp_insights: Insights enabled for Node ID E806906641FC[0m
+[0;32mI (786) esp_insights: =========================================[0m
+[0;32mI (792) insights_cmd_resp: Enabling Command-Response Module.[0m
+[0;32mI (797) esp_rmaker_common_cmd_resp: Registered command 257[0m
+[0;32mI (802) rainmaker_insight: Light metrics initialized[0m
+[0;32mI (807) esp_rmaker_core: Starting RainMaker Work Queue task[0m
+[0;32mI (813) esp_rmaker_work_queue: RainMaker Work Queue task started.[0m
+[0;32mI (819) network_prov_scheme_ble: BT memory released[0m
+[0;32mI (823) app_wifi: Already provisioned, starting Wi-Fi STA[0m
+[0;32mI (828) network_prov_scheme_ble: BTDM memory released[0m
+[0;32mI (834) app_wifi: WiFi STA configured: listen_interval=3 (enables light sleep)[0m
+[0;32mI (840) phy_init: phy_version 1201,bae5dd99,Mar  3 2025,15:36:21[0m
+[0;32mI (885) wifi:mode : sta (e8:06:90:66:41:fc)[0m
+[0;32mI (886) wifi:enable tsf[0m
+[0;32mI (887) app_wifi: Wi-Fi started, connecting...[0m
+[0;32mI (3300) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3301) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (3317) wifi:state: auth -> init (0x1c0)[0m
+[0;32mI (3320) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (3321) app_wifi: Disconnected from Wi-Fi. Reconnecting...[0m
+[0;33mW (5735) app_wifi: Disconnected from Wi-Fi. Reconnecting...[0m
+[0;32mI (8148) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (8149) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (8158) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (8268) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (8293) wifi:connected with Duc, aid = 6, channel 11, BW20, bssid = 42:dc:46:81:46:a8[0m
+[0;32mI (8294) wifi:security: WPA2-PSK, phy: bgn, rssi: -45[0m
+[0;32mI (8297) wifi:pm start, type: 1[0m
+
+[0;32mI (8298) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (8306) wifi:set rx beacon pti, rx_bcn_pti: 14, bcn_timeout: 25000, mt_pti: 14, mt_time: 10000[0m
+[0;32mI (8317) esp_insights: esp_diag_data_store_non_critical_write failed group wifi, len 40, err 0x0101[0m
+[0;32mI (8323) esp_insights: ESP_DIAG_DATA_STORE_EVENT_NON_CRITICAL_DATA_LOW_MEM[0m
+[0;32mI (8327) wifi:<ba-add>idx:0 (ifx:0, 42:dc:46:81:46:a8), tid:0, ssn:0, winSize:64[0m
+[0;32mI (8337) esp_insights: ESP_DIAG_DATA_STORE_EVENT_NON_CRITICAL_DATA_LOW_MEM[0m
+[0;32mI (8344) esp_insights: ESP_DIAG_DATA_STORE_EVENT_NON_CRITICAL_DATA_LOW_MEM[0m
+[0;32mI (8350) esp_insights: ESP_DIAG_DATA_STORE_EVENT_NON_CRITICAL_DATA_LOW_MEM[0m
+[0;32mI (8357) esp_insights: ESP_DIAG_DATA_STORE_EVENT_NON_CRITICAL_DATA_LOW_MEM[0m
+[0;32mI (8553) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (8554) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (9384) app_wifi: Connected! Got IP: 10.198.227.33[0m
+[0;32mI (9385) esp_insights: esp_diag_data_store_non_critical_write failed group light, len 40, err 0x0101[0m
+[0;32mI (9387) esp_insights: esp_diag_data_store_non_critical_write failed group light, len 40, err 0x0101[0m
+[0;32mI (9396) esp_insights: esp_diag_data_store_non_critical_write failed group light, len 40, err 0x0101[0m
+[0;32mI (9404) esp_insights: esp_diag_data_store_non_critical_write failed group light, len 40, err 0x0101[0m
+-1
+
+FreeRTOS: FreeRTOS Task "crashTask" should not return, Aborting now!
+Core  0 register dump:
+MEPC    : 0x4038b880  RA      : 0x4038c5e4  SP      : 0x3fca15c0  GP      : 0x3fc98e00  
+TP      : 0x3fca15f0  T0      : 0x00000000  T1      : 0x00000000  T2      : 0x00000000  
+S0/FP   : 0x3fc9a000  S1      : 0x00000000  A0      : 0x3fc99e74  A1      : 0x3c0f1427  
+A2      : 0x00000000  A3      : 0x3fc99e97  A4      : 0x00000001  A5      : 0x3fca0000  
+A6      : 0x3c111618  A7      : 0x0000000a  S2      : 0x00000000  S3      : 0x00000000  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x00000000  T4      : 0x00000000  T5      : 0x00000000  T6      : 0x00000000  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000002  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+add symbol table from file "/home/duc/esp/Insights/7_insights/build/bootloader/bootloader.elf"
+panic_abort (details=details@entry=0x3fc99e74 <msg> "") at /home/duc/esp/esp-idf/components/esp_system/panic.c:483
+483	    asm("unimp");   // should be an invalid operation on RISC-V targets
+#0  panic_abort (details=details@entry=0x3fc99e74 <msg> "") at /home/duc/esp/esp-idf/components/esp_system/panic.c:483
+#1  0x4038c5e4 in vPortTaskWrapper (pxCode=<optimized out>, pvParameters=<optimized out>) at /home/duc/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:260
+
+
+
+ELF file SHA256: 7b1ec852a
+
+[0;32mI (2467) esp_core_dump_flash: Save core dump to flash...[0m
+[0;32mI (2472) esp_core_dump_flash: Erase flash 12288 bytes @ 0x346000[0m
+[0;32mI (2632) esp_core_dump_flash: Write end offset 0x2224, check sum length 4[0m
+[0;32mI (2632) esp_core_dump_flash: Core dump has been saved to flash.[0m
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4038b970
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x3fcd5820,len:0x13bc
+load:0x403cbf10,len:0xde8
+load:0x403ce710,len:0x3024
+entry 0x403cbf1a
+[0;32mI (35) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (35) boot: compile time Nov 25 2025 09:13:25[0m
+[0;32mI (35) boot: chip revision: v0.4[0m
+[0;32mI (35) boot: efuse block revision: v1.3[0m
+[0;32mI (39) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (43) boot.esp32c3: SPI Speed      : 40MHz[0m
+[0;32mI (47) boot.esp32c3: SPI Mode       : QIO[0m
+[0;32mI (51) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (68) boot:  0 sec_cert         unknown          3f 06 0000d000 00003000[0m
+[0;32mI (74) boot:  1 nvs              WiFi data        01 02 00010000 00006000[0m
+[0;32mI (81) boot:  2 otadata          OTA data         01 00 00016000 00002000[0m
+[0;32mI (87) boot:  3 phy_init         RF data          01 01 00018000 00001000[0m
+[0;32mI (94) boot:  4 ota_0            OTA app          00 10 00020000 00190000[0m
+[0;32mI (100) boot:  5 ota_1            OTA app          00 11 001b0000 00190000[0m
+[0;32mI (107) boot:  6 fctry            WiFi data        01 02 00340000 00006000[0m
+[0;32mI (114) boot:  7 coredump         Unknown data     01 03 00346000 00010000[0m
+[0;32mI (120) boot: End of partition table[0m
+[0;32mI (124) esp_image: segment 0: paddr=00020020 vaddr=3c0f0020 size=44b2ch (281388) map[0m
+[0;32mI (178) esp_image: segment 1: paddr=00064b54 vaddr=3fc98600 size=02bb8h ( 11192) load[0m
+[0;32mI (180) esp_image: segment 2: paddr=00067714 vaddr=40380000 size=08904h ( 35076) load[0m
+[0;32mI (188) esp_image: segment 3: paddr=00070020 vaddr=42000020 size=ea5cch (959948) map[0m
+[0;32mI (348) esp_image: segment 4: paddr=0015a5f4 vaddr=40388904 size=0fbe8h ( 64488) load[0m
+[0;32mI (361) esp_image: segment 5: paddr=0016a1e4 vaddr=5000188c size=00020h (    32) load[0m
+[0;32mI (369) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (369) boot: Disabling RNG early entropy source...[0m
+[0;32mI (379) cpu_start: Unicore app[0m
+[0;32mI (387) cpu_start: Pro cpu start user code[0m
+[0;32mI (387) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (387) app_init: Application information:[0m
+[0;32mI (387) app_init: Project name:     7_insights[0m
+[0;32mI (391) app_init: App version:      1[0m
+[0;32mI (395) app_init: Compile time:     Nov 25 2025 09:13:10[0m
+[0;32mI (400) app_init: ELF file SHA256:  7b1ec852a...[0m
+[0;32mI (404) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (408) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (412) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (416) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (419) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (426) heap_init: At 3FCA1EC0 len 0001E140 (120 KiB): RAM[0m
+[0;32mI (431) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (437) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (443) heap_init: At 500018AC len 0000073C (1 KiB): RTCRAM[0m
+[0;32mI (449) spi_flash: detected chip: generic[0m
+[0;32mI (452) spi_flash: flash io: qio[0m
+[0;32mI (455) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (461) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (468) esp_core_dump_flash: Init core dump to flash[0m
+[0;32mI (473) esp_core_dump_flash: Found partition 'coredump' @ 346000 65536 bytes[0m
+[0;32mI (485) esp_core_dump_flash: Core dump data checksum is correct[0m
+[0;32mI (485) esp_core_dump_flash: Found core dump 8740 bytes in flash @ 0x346000[0m
+[0;32mI (503) coexist: coex firmware version: b0bcc39[0m
+[0;32mI (503) coexist: coexist rom version 9387209[0m
+[0;32mI (504) main_task: Started on CPU0[0m
+[0;32mI (504) main_task: Calling app_main()[0m
+[1;31mE (506) rainmaker_insight: app_main[0m
+[0;32mI (519) rainmaker_insight: NVS Flash initialization[0m
+[0;32mI (519) pm: Frequency switching config: CPU_MAX: 80, APB_MAX: 80, APB_MIN: 10, Light sleep: ENABLED[0m
+[0;32mI (523) rainmaker_insight: Application driver initialization[0m
+[0;32mI (570) pp: pp rom version: 9387209[0m
+[0;32mI (570) net80211: net80211 rom version: 9387209[0m
+[0;32mI (572) wifi:wifi driver task: 3fcab4cc, prio:23, stack:6144, core=0[0m
+[0;32mI (583) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (584) wifi:wifi certification version: v7.0[0m
+[0;32mI (584) wifi:config NVS flash: enabled[0m
+[0;32mI (584) wifi:config nano formatting: enabled[0m
+[0;32mI (588) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (593) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (597) wifi:Init management short buffer num: 32[0m
+[0;32mI (601) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (605) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (609) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (614) wifi:Init static rx buffer num: 10[0m
+[0;32mI (617) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (623) wifi_init: rx ba win: 6[0m
+[0;32mI (624) wifi_init: accept mbox: 6[0m
+[0;32mI (627) wifi_init: tcpip mbox: 32[0m
+[0;32mI (630) wifi_init: udp mbox: 6[0m
+[0;32mI (633) wifi_init: tcp mbox: 6[0m
+[0;32mI (636) wifi_init: tcp tx win: 5760[0m
+[0;32mI (639) wifi_init: tcp rx win: 5760[0m
+[0;32mI (642) wifi_init: tcp mss: 1440[0m
+[0;32mI (645) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (649) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (660) esp_rmaker_work_queue: Work Queue created.[0m
+[0;32mI (667) esp_mqtt_glue: AWS PPI: ?Platform=APN3|A0|RM|EX00|RMDev|1x0|E806906641FC[0m
+[0;32mI (668) esp_mqtt_glue: Initialising MQTT[0m
+[0;32mI (668) esp_rmaker_mqtt_budget: MQTT Budgeting initialised. Default: 100, Max: 1024, Revive count: 1, Revive period: 5[0m
+[0;32mI (678) esp_rmaker_node: Node ID ----- E806906641FC[0m
+[0;32mI (684) esp_rmaker_ota_using_params: OTA enabled with Params[0m
+[0;32mI (689) esp_rmaker_ota: OTA state = 2[0m
+[0;32mI (691) esp_rmaker_time: Initializing SNTP. Using the SNTP server: pool.ntp.org[0m
+[0;32mI (702) esp_rmaker_time_service: Time service enabled[0m
+[0;32mI (703) esp_rmaker_time: SNTP already initialized.[0m
+[0;33mW (709) app_insights: Event loop creation failed with ESP_ERR_INVALID_STATE. Proceeding since it must have been created elsewhere.[0m
+[0;33mW (719) app_insights: Nodes with Self Claiming may not be accessible for Insights.[0m
+[0;32mI (730) esp_insights: ESP_DIAG_DATA_STORE_EVENT_NON_CRITICAL_DATA_LOW_MEM[0m
+[0;32mI (733) esp_insights: esp_diag_data_store_non_critical_write failed group heap, len 40, err 0x0101[0m
+[0;33mW (742) heap_metrics: Failed to add heap metric key:free[0m
+[0;32mI (747) esp_insights: ESP_DIAG_DATA_STORE_EVENT_NON_CRITICAL_DATA_LOW_MEM[0m
+[0;32mI (753) esp_insights: esp_diag_data_store_non_critical_write failed group wifi, len 40, err 0x0101[0m
+[0;32mI (763) esp_insights: ESP_DIAG_DATA_STORE_EVENT_NON_CRITICAL_DATA_LOW_MEM[0m
+[0;32mI (769) esp_insights: =========================================[0m
+[0;32mI (774) esp_insights: Insights enabled for Node ID E806906641FC[0m
+[0;32mI (780) esp_insights: =========================================[0m
+[0;32mI (785) insights_cmd_resp: Enabling Command-Response Module.[0m
+[0;32mI (791) esp_rmaker_common_cmd_resp: Registered command 257[0m
+[0;32mI (796) rainmaker_insight: Light metrics initialized[0m
+[0;32mI (801) esp_rmaker_core: Starting RainMaker Work Queue task[0m
+[0;32mI (806) esp_rmaker_work_queue: RainMaker Work Queue task started.[0m
+[0;32mI (813) network_prov_scheme_ble: BT memory released[0m
+[0;32mI (817) app_wifi: Already provisioned, starting Wi-Fi STA[0m
+[0;32mI (822) network_prov_scheme_ble: BTDM memory released[0m
+[0;32mI (827) app_wifi: WiFi STA configured: listen_interval=3 (enables light sleep)[0m
+[0;32mI (834) phy_init: phy_version 1201,bae5dd99,Mar  3 2025,15:36:21[0m
+[0;32mI (874) wifi:mode : sta (e8:06:90:66:41:fc)[0m
+[0;32mI (875) wifi:enable tsf[0m
+[0;32mI (876) app_wifi: Wi-Fi started, connecting...[0m
+[0;32mI (3289) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3290) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (3303) wifi:state: auth -> init (0x1c0)[0m
+[0;32mI (3306) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (3307) app_wifi: Disconnected from Wi-Fi. Reconnecting...[0m
+[0;33mW (5722) app_wifi: Disconnected from Wi-Fi. Reconnecting...[0m
+[0;32mI (8134) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (8135) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (8144) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (8209) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (8235) wifi:connected with Duc, aid = 7, channel 11, BW20, bssid = 42:dc:46:81:46:a8[0m
+[0;32mI (8236) wifi:security: WPA2-PSK, phy: bgn, rssi: -38[0m
+[0;32mI (8238) wifi:pm start, type: 1[0m
+
+[0;32mI (8240) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (8248) wifi:set rx beacon pti, rx_bcn_pti: 14, bcn_timeout: 25000, mt_pti: 14, mt_time: 10000[0m
+[0;32mI (8258) esp_insights: esp_diag_data_store_non_critical_write failed group wifi, len 40, err 0x0101[0m
+[0;32mI (8265) esp_insights: ESP_DIAG_DATA_STORE_EVENT_NON_CRITICAL_DATA_LOW_MEM[0m
+[0;32mI (8272) esp_insights: ESP_DIAG_DATA_STORE_EVENT_NON_CRITICAL_DATA_LOW_MEM[0m
+[0;32mI (8278) esp_insights: ESP_DIAG_DATA_STORE_EVENT_NON_CRITICAL_DATA_LOW_MEM[0m
+[0;32mI (8285) esp_insights: ESP_DIAG_DATA_STORE_EVENT_NON_CRITICAL_DATA_LOW_MEM[0m
+[0;32mI (8292) wifi:<ba-add>idx:0 (ifx:0, 42:dc:46:81:46:a8), tid:0, ssn:0, winSize:64[0m
+[0;32mI (8299) esp_insights: ESP_DIAG_DATA_STORE_EVENT_NON_CRITICAL_DATA_LOW_MEM[0m
+[0;32mI (8391) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (8392) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (9319) app_wifi: Connected! Got IP: 10.198.227.33[0m
+[0;32mI (9320) esp_insights: esp_diag_data_store_non_critical_write failed group light, len 40, err 0x0101[0m
+[0;32mI (9322) esp_insights: esp_diag_data_store_non_critical_write failed group light, len 40, err 0x0101[0m
+[0;32mI (9331) esp_insights: esp_diag_data_store_non_critical_write failed group light, len 40, err 0x0101[0m
+[0;32mI (9339) esp_insights: esp_diag_data_store_non_critical_write failed group light, len 40, err 0x0101[0m
+-1
+
+FreeRTOS: FreeRTOS Task "crashTask" should not return, Aborting now!
+Core  0 register dump:
+MEPC    : 0x4038b880  RA      : 0x4038c5e4  SP      : 0x3fca15c0  GP      : 0x3fc98e00  
+TP      : 0x3fca15f0  T0      : 0x00000000  T1      : 0x00000000  T2      : 0x00000000  
+S0/FP   : 0x3fc9a000  S1      : 0x00000000  A0      : 0x3fc99e74  A1      : 0x3c0f1427  
+A2      : 0x00000000  A3      : 0x3fc99e97  A4      : 0x00000001  A5      : 0x3fca0000  
+A6      : 0x3c111618  A7      : 0x0000000a  S2      : 0x00000000  S3      : 0x00000000  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x00000000  T4      : 0x00000000  T5      : 0x00000000  T6      : 0x00000000  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000002  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+add symbol table from file "/home/duc/esp/Insights/7_insights/build/bootloader/bootloader.elf"
+panic_abort (details=details@entry=0x3fc99e74 <msg> "") at /home/duc/esp/esp-idf/components/esp_system/panic.c:483
+483	    asm("unimp");   // should be an invalid operation on RISC-V targets
+#0  panic_abort (details=details@entry=0x3fc99e74 <msg> "") at /home/duc/esp/esp-idf/components/esp_system/panic.c:483
+#1  0x4038c5e4 in vPortTaskWrapper (pxCode=<optimized out>, pvParameters=<optimized out>) at /home/duc/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:260
+
+
+
+ELF file SHA256: 7b1ec852a
+
+[0;32mI (2456) esp_core_dump_flash: Save core dump to flash...[0m
+[0;32mI (2461) esp_core_dump_flash: Erase flash 12288 bytes @ 0x346000[0m
+[0;32mI (2615) esp_core_dump_flash: Write end offset 0x2224, check sum length 4[0m
+[0;32mI (2615) esp_core_dump_flash: Core dump has been saved to flash.[0m
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4038b970
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x3fcd5820,len:0x13bc
+load:0x403cbf10,len:0xde8
+load:0x403ce710,len:0x3024
+entry 0x403cbf1a
+[0;32mI (35) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (35) boot: compile time Nov 25 2025 09:13:25[0m
+[0;32mI (35) boot: chip revision: v0.4[0m
+[0;32mI (35) boot: efuse block revision: v1.3[0m
+[0;32mI (39) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (43) boot.esp32c3: SPI Speed      : 40MHz[0m
+[0;32mI (47) boot.esp32c3: SPI Mode       : QIO[0m
+[0;32mI (51) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (68) boot:  0 sec_cert         unknown          3f 06 0000d000 00003000[0m
+[0;32mI (74) boot:  1 nvs              WiFi data        01 02 00010000 00006000[0m
+[0;32mI (81) boot:  2 otadata          OTA data         01 00 00016000 00002000[0m
+[0;32mI (87) boot:  3 phy_init         RF data          01 01 00018000 00001000[0m
+[0;32mI (94) boot:  4 ota_0            OTA app          00 10 00020000 00190000[0m
+[0;32mI (100) boot:  5 ota_1            OTA app          00 11 001b0000 00190000[0m
+[0;32mI (107) boot:  6 fctry            WiFi data        01 02 00340000 00006000[0m
+[0;32mI (114) boot:  7 coredump         Unknown data     01 03 00346000 00010000[0m
+[0;32mI (120) boot: End of partition table[0m
+[0;32mI (124) esp_image: segment 0: paddr=00020020 vaddr=3c0f0020 size=44b2ch (281388) map[0m
+[0;32mI (178) esp_image: segment 1: paddr=00064b54 vaddr=3fc98600 size=02bb8h ( 11192) load[0m
+[0;32mI (180) esp_image: segment 2: paddr=00067714 vaddr=40380000 size=08904h ( 35076) load[0m
+[0;32mI (188) esp_image: segment 3: paddr=00070020 vaddr=42000020 size=ea5cch (959948) map[0m
+[0;32mI (348) esp_image: segment 4: paddr=0015a5f4 vaddr=40388904 size=0fbe8h ( 64488) load[0m
+[0;32mI (361) esp_image: segment 5: paddr=0016a1e4 vaddr=5000188c size=00020h (    32) load[0m
+[0;32mI (369) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (369) boot: Disabling RNG early entropy source...[0m
+[0;32mI (379) cpu_start: Unicore app[0m
+[0;32mI (387) cpu_start: Pro cpu start user code[0m
+[0;32mI (387) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (387) app_init: Application information:[0m
+[0;32mI (387) app_init: Project name:     7_insights[0m
+[0;32mI (391) app_init: App version:      1[0m
+[0;32mI (395) app_init: Compile time:     Nov 25 2025 09:13:10[0m
+[0;32mI (400) app_init: ELF file SHA256:  7b1ec852a...[0m
+[0;32mI (404) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (408) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (412) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (416) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (419) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (426) heap_init: At 3FCA1EC0 len 0001E140 (120 KiB): RAM[0m
+[0;32mI (431) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (437) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (443) heap_init: At 500018AC len 0000073C (1 KiB): RTCRAM[0m
+[0;32mI (449) spi_flash: detected chip: generic[0m
+[0;32mI (452) spi_flash: flash io: qio[0m
+[0;32mI (455) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (461) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (468) esp_core_dump_flash: Init core dump to flash[0m
+[0;32mI (473) esp_core_dump_flash: Found partition 'coredump' @ 346000 65536 bytes[0m
+[0;32mI (485) esp_core_dump_flash: Core dump data checksum is correct[0m
+[0;32mI (485) esp_core_dump_flash: Found core dump 8740 bytes in flash @ 0x346000[0m
+[0;32mI (503) coexist: coex firmware version: b0bcc39[0m
+[0;32mI (503) coexist: coexist rom version 9387209[0m
+[0;32mI (504) main_task: Started on CPU0[0m
+[0;32mI (504) main_task: Calling app_main()[0m
+[1;31mE (506) rainmaker_insight: app_main[0m
+[0;32mI (519) rainmaker_insight: NVS Flash initialization[0m
+[0;32mI (519) pm: Frequency switching config: CPU_MAX: 80, APB_MAX: 80, APB_MIN: 10, Light sleep: ENABLED[0m
+[0;32mI (523) rainmaker_insight: Application driver initialization[0m
+[0;32mI (570) pp: pp rom version: 9387209[0m
+[0;32mI (570) net80211: net80211 rom version: 9387209[0m
+[0;32mI (572) wifi:wifi driver task: 3fcab4cc, prio:23, stack:6144, core=0[0m
+[0;32mI (583) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (584) wifi:wifi certification version: v7.0[0m
+[0;32mI (584) wifi:config NVS flash: enabled[0m
+[0;32mI (584) wifi:config nano formatting: enabled[0m
+[0;32mI (588) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (593) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (597) wifi:Init management short buffer num: 32[0m
+[0;32mI (601) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (605) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (609) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (614) wifi:Init static rx buffer num: 10[0m
+[0;32mI (617) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (623) wifi_init: rx ba win: 6[0m
+[0;32mI (624) wifi_init: accept mbox: 6[0m
+[0;32mI (627) wifi_init: tcpip mbox: 32[0m
+[0;32mI (630) wifi_init: udp mbox: 6[0m
+[0;32mI (633) wifi_init: tcp mbox: 6[0m
+[0;32mI (636) wifi_init: tcp tx win: 5760[0m
+[0;32mI (639) wifi_init: tcp rx win: 5760[0m
+[0;32mI (642) wifi_init: tcp mss: 1440[0m
+[0;32mI (645) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (649) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (660) esp_rmaker_work_queue: Work Queue created.[0m
+[0;32mI (667) esp_mqtt_glue: AWS PPI: ?Platform=APN3|A0|RM|EX00|RMDev|1x0|E806906641FC[0m
+[0;32mI (668) esp_mqtt_glue: Initialising MQTT[0m
+[0;32mI (668) esp_rmaker_mqtt_budget: MQTT Budgeting initialised. Default: 100, Max: 1024, Revive count: 1, Revive period: 5[0m
+[0;32mI (678) esp_rmaker_node: Node ID ----- E806906641FC[0m
+[0;32mI (684) esp_rmaker_ota_using_params: OTA enabled with Params[0m
+[0;32mI (689) esp_rmaker_ota: OTA state = 2[0m
+[0;32mI (691) esp_rmaker_time: Initializing SNTP. Using the SNTP server: pool.ntp.org[0m
+[0;32mI (702) esp_rmaker_time_service: Time service enabled[0m
+[0;32mI (703) esp_rmaker_time: SNTP already initialized.[0m
+[0;33mW (709) app_insights: Event loop creation failed with ESP_ERR_INVALID_STATE. Proceeding since it must have been created elsewhere.[0m
+[0;33mW (719) app_insights: Nodes with Self Claiming may not be accessible for Insights.[0m
+[0;32mI (730) esp_insights: ESP_DIAG_DATA_STORE_EVENT_NON_CRITICAL_DATA_LOW_MEM[0m
+[0;32mI (733) esp_insights: esp_diag_data_store_non_critical_write failed group heap, len 40, err 0x0101[0m
+[0;33mW (742) heap_metrics: Failed to add heap metric key:free[0m
+[0;32mI (747) esp_insights: ESP_DIAG_DATA_STORE_EVENT_NON_CRITICAL_DATA_LOW_MEM[0m
+[0;32mI (753) esp_insights: esp_diag_data_store_non_critical_write failed group wifi, len 40, err 0x0101[0m
+[0;32mI (763) esp_insights: ESP_DIAG_DATA_STORE_EVENT_NON_CRITICAL_DATA_LOW_MEM[0m
+[0;32mI (769) esp_insights: =========================================[0m
+[0;32mI (774) esp_insights: Insights enabled for Node ID E806906641FC[0m
+[0;32mI (780) esp_insights: =========================================[0m
+[0;32mI (785) insights_cmd_resp: Enabling Command-Response Module.[0m
+[0;32mI (791) esp_rmaker_common_cmd_resp: Registered command 257[0m
+[0;32mI (796) rainmaker_insight: Light metrics initialized[0m
+[0;32mI (801) esp_rmaker_core: Starting RainMaker Work Queue task[0m
+[0;32mI (806) esp_rmaker_work_queue: RainMaker Work Queue task started.[0m
+[0;32mI (813) network_prov_scheme_ble: BT memory released[0m
+[0;32mI (817) app_wifi: Already provisioned, starting Wi-Fi STA[0m
+[0;32mI (822) network_prov_scheme_ble: BTDM memory released[0m
+[0;32mI (827) app_wifi: WiFi STA configured: listen_interval=3 (enables light sleep)[0m
+[0;32mI (834) phy_init: phy_version 1201,bae5dd99,Mar  3 2025,15:36:21[0m
+[0;32mI (874) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (890) wifi:mode : sta (e8:06:90:66:41:fc)[0m
+[0;32mI (891) wifi:enable tsf[0m
+[0;32mI (892) app_wifi: Wi-Fi started, connecting...[0m

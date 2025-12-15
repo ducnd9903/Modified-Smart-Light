@@ -1,0 +1,43 @@
+Command: ninja all
+[1/10] Performing build step for 'bootloader'
+[1/1] cd /home/duc/esp/Insights/7_insights/build/bootloader/esp-idf/esptool_py && /home/duc/.espressif/python_env/idf5.5_py3.13_env/bin/python /home/duc/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/duc/esp/Insights/7_insights/build/bootloader/bootloader.bin
+Bootloader binary size 0x5220 bytes. 0x2de0 bytes (36%) free.
+[2/10] No install step for 'bootloader'
+[3/10] Completed 'bootloader'
+[4/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/app_main.c.obj
+[5/10] Linking C static library esp-idf/main/libmain.a
+[6/10] Generating esp-idf/esp_system/ld/sections.ld
+[7/10] Linking CXX executable 7_insights.elf
+[8/10] Generating binary image from built executable
+esptool.py v4.10.0
+Creating esp32c3 image...
+Merged 1 ELF section
+Successfully created esp32c3 image.
+Generated /home/duc/esp/Insights/7_insights/build/7_insights.bin
+[9/10] cd /home/duc/esp/Insights/7_insights/build/esp-idf/esptool_py && /home/duc/.espressif/python_env/idf5.5_py3.13_env/bin/python /home/duc/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/duc/esp/Insights/7_insights/build/partition_table/partition-table.bin /home/duc/esp/Insights/7_insights/build/7_insights.bin
+7_insights.bin binary size 0x14a1e0 bytes. Smallest app partition is 0x190000 bytes. 0x45e20 bytes (17%) free.
+[10/10] Running utility command for app
+CMake Deprecation Warning at /home/duc/esp/esp-rainmaker/components/esp-insights/components/esp_insights/scripts/gen_tar_dir.cmake:4 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+===================== Generating insights firmware package build/7_insights-v1.zip ======================
+7_insights-v1
+7_insights-v1/project_description.json
+7_insights-v1/bootloader
+7_insights-v1/bootloader/bootloader.bin
+7_insights-v1/sdkconfig
+7_insights-v1/ota_data_initial.bin
+7_insights-v1/partitions.csv
+7_insights-v1/flash_args
+7_insights-v1/project_build_config.json
+7_insights-v1/partition_table
+7_insights-v1/partition_table/partition-table.bin
+7_insights-v1/7_insights.bin
+7_insights-v1/7_insights.elf
+7_insights-v1/7_insights.map

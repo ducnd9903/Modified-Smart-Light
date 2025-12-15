@@ -1,0 +1,47 @@
+Command: ninja all
+[1/10] Performing build step for 'bootloader'
+[1/1] C:\Windows\system32\cmd.exe /C "cd /D E:\esp\book-esp32c3-iot-projects\test_case\gatt_server\build\bootloader\esp-idf\esptool_py && e:\esp\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe E:/esp/ESP-IDFcontainer/v5.5.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 E:/esp/book-esp32c3-iot-projects/test_case/gatt_server/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5210 bytes. 0x2df0 bytes (36%) free.
+[2/10] No install step for 'bootloader'
+[3/10] Completed 'bootloader'
+[4/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/app_main.c.obj
+E:/esp/book-esp32c3-iot-projects/test_case/gatt_server/main/app_main.c: In function 'gatts_profile_a_event_handler':
+E:/esp/book-esp32c3-iot-projects/test_case/gatt_server/main/app_main.c:300:13: warning: 'esp_log_buffer_hex' is deprecated: Use 'ESP_LOG_BUFFER_HEX' instead [-Wdeprecated-declarations]
+  300 |             esp_log_buffer_hex(TAG, param->conf.value, param->conf.len);
+      |             ^~~~~~~~~~~~~~~~~~
+In file included from E:/esp/ESP-IDFcontainer/v5.5.1/esp-idf/components/log/include/esp_log.h:17,
+                 from E:/esp/book-esp32c3-iot-projects/test_case/gatt_server/main/app_main.c:17:
+E:/esp/ESP-IDFcontainer/v5.5.1/esp-idf/components/log/include/esp_log_buffer.h:157:20: note: declared here
+  157 | static inline void esp_log_buffer_hex(const char *tag, const void *buffer, uint16_t buff_len)
+      |                    ^~~~~~~~~~~~~~~~~~
+E:/esp/book-esp32c3-iot-projects/test_case/gatt_server/main/app_main.c: In function 'gatts_profile_b_event_handler':
+E:/esp/book-esp32c3-iot-projects/test_case/gatt_server/main/app_main.c:331:9: warning: 'esp_log_buffer_hex' is deprecated: Use 'ESP_LOG_BUFFER_HEX' instead [-Wdeprecated-declarations]
+  331 |         esp_log_buffer_hex(TAG, param->write.value, param->write.len);
+      |         ^~~~~~~~~~~~~~~~~~
+E:/esp/ESP-IDFcontainer/v5.5.1/esp-idf/components/log/include/esp_log_buffer.h:157:20: note: declared here
+  157 | static inline void esp_log_buffer_hex(const char *tag, const void *buffer, uint16_t buff_len)
+      |                    ^~~~~~~~~~~~~~~~~~
+E:/esp/book-esp32c3-iot-projects/test_case/gatt_server/main/app_main.c:401:13: warning: 'esp_log_buffer_hex' is deprecated: Use 'ESP_LOG_BUFFER_HEX' instead [-Wdeprecated-declarations]
+  401 |             esp_log_buffer_hex(TAG, param->conf.value, param->conf.len);
+      |             ^~~~~~~~~~~~~~~~~~
+E:/esp/ESP-IDFcontainer/v5.5.1/esp-idf/components/log/include/esp_log_buffer.h:157:20: note: declared here
+  157 | static inline void esp_log_buffer_hex(const char *tag, const void *buffer, uint16_t buff_len)
+      |                    ^~~~~~~~~~~~~~~~~~
+[5/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/app_driver.c.obj
+In file included from E:/esp/book-esp32c3-iot-projects/device_firmware/components/button/include/button_adc.h:18,
+                 from E:/esp/book-esp32c3-iot-projects/device_firmware/components/button/include/iot_button.h:17,
+                 from E:/esp/book-esp32c3-iot-projects/test_case/gatt_server/main/app_driver.c:9:
+E:/esp/ESP-IDFcontainer/v5.5.1/esp-idf/components/driver/deprecated/driver/adc.h:19:2: warning: #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively" [-Wcpp]
+   19 | #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively"
+      |  ^~~~~~~
+[6/10] Linking C static library esp-idf\main\libmain.a
+[7/10] Generating esp-idf/esp_system/ld/sections.ld
+[8/10] Linking CXX executable gatt_server_demos.elf
+[9/10] Generating binary image from built executable
+esptool.py v4.10.0
+Creating esp32c3 image...
+Merged 1 ELF section
+Successfully created esp32c3 image.
+Generated E:/esp/book-esp32c3-iot-projects/test_case/gatt_server/build/gatt_server_demos.bin
+[10/10] C:\Windows\system32\cmd.exe /C "cd /D E:\esp\book-esp32c3-iot-projects\test_case\gatt_server\build\esp-idf\esptool_py && e:\esp\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe E:/esp/ESP-IDFcontainer/v5.5.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app E:/esp/book-esp32c3-iot-projects/test_case/gatt_server/build/partition_table/partition-table.bin E:/esp/book-esp32c3-iot-projects/test_case/gatt_server/build/gatt_server_demos.bin"
+gatt_server_demos.bin binary size 0xd3940 bytes. Smallest app partition is 0x190000 bytes. 0xbc6c0 bytes (47%) free.
