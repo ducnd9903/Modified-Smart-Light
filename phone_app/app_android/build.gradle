@@ -1,0 +1,43 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+
+    def localProperties = new Properties()
+    localProperties.load(new FileInputStream(rootProject.file("local.properties")))
+
+    repositories {
+        google()
+        mavenCentral()
+        jcenter()
+    }
+    dependencies {
+
+        classpath libs.gradle
+        classpath libs.kotlin.gradle.plugin
+        classpath libs.protobuf.gradle.plugin
+        classpath libs.google.services // Google Services plugin
+        classpath libs.hilt.android.gradle.plugin
+
+        // Check if the "isChinaRegion" property exists and what its value is
+        if (localProperties.getProperty("isChinaRegion", "false") != "true") {
+            classpath libs.firebase.crashlytics.gradle
+        }
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        jcenter()
+        maven { url 'https://jitpack.io' }
+        maven { url "https://maven.google.com" }
+        flatDir {
+            dirs 'src/main/libs'
+        }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
